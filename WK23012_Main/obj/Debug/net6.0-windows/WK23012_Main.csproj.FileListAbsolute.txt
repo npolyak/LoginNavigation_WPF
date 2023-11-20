@@ -1,0 +1,114 @@
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.AssemblyReference.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\ButtonStyles.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\UIColors.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Login.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Module.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\RunScreen.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main_MarkupCompile.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main_MarkupCompile.lref
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.exe
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.deps.json
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.runtimeconfig.json
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.pdb
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\App.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Login.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Module.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\RunScreen.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.g.resources
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.Properties.Resources.resources
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.GenerateResource.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.AssemblyInfoInputs.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.AssemblyInfo.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.CoreCompileInputs.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.CopyComplete
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\refint\WK23012_Main.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.pdb
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.genruntimeconfig.cache
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\ref\WK23012_Main.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Diagnostic.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Diagnostic.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Home.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Home.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\SystemV.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\SystemV.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\OvenMap.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\OvenMap.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\DropDownMenu.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunParameters.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunScreenHome.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunParameters.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunScreenHome.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\ErrorMessage.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\GHSECSGEM.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\ErrorMessage.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\GHSECSGEM.baml
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\VacuumProfile.g.cs
+C:\Users\cjarq\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\VacuumProfile.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.exe
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.deps.json
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.runtimeconfig.json
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\WK23012_Main.pdb
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.AssemblyReference.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\ButtonStyles.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\DropDownMenu.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Styles\UIColors.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Diagnostic.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Home.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Login.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Module.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\OvenMap.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\ErrorMessage.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\GHSECSGEM.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunParameters.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunScreenHome.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\VacuumProfile.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\RunScreen.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\SystemV.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main_MarkupCompile.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main_MarkupCompile.lref
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\App.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Diagnostic.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Home.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Login.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\MainWindow.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Module.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\OvenMap.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\ErrorMessage.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\GHSECSGEM.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunParameters.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\RunScreenHome.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\Run Screen\VacuumProfile.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\RunScreen.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\Views\SystemV.baml
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.g.resources
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.Properties.Resources.resources
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.GenerateResource.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.AssemblyInfoInputs.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.AssemblyInfo.cs
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.CoreCompileInputs.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.csproj.CopyComplete
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\refint\WK23012_Main.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.pdb
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.genruntimeconfig.cache
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\obj\Debug\net6.0-windows\ref\WK23012_Main.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\carlos.jarquin\Desktop\WK23012_Main\WK23012_Main\bin\Debug\net6.0-windows\Dragablz.dll
