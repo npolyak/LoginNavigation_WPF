@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Input;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WK23012_Main.Views
 {
@@ -9,8 +8,14 @@ namespace WK23012_Main.Views
         public Login()
         {
             InitializeComponent();
+            Loaded += Login_Loaded; // Attach the event handler when the window is loaded
         }
 
+        private void Login_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Set the focus to the txtUser TextBox when the window is loaded
+            txtUser.Focus();
+        }
 
         private void txtPass_KeyDown(object sender, KeyEventArgs e)
         {
@@ -75,5 +80,4 @@ namespace WK23012_Main.Views
             return username == "3s" && password == "1234";
         }
     }
-
 }

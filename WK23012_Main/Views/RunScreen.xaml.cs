@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace WK23012_Main.Views
 {
-    /// <summary>
-    /// Interaction logic for RunScreen.xaml
-    /// </summary>
     public partial class RunScreen : UserControl
     {
         public RunScreen()
