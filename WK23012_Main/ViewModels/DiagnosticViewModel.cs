@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using WK23012_Main.Models.Diagnostic;
+﻿using System.Collections.ObjectModel;
 
 namespace WK23012_Main.ViewModels
 {
@@ -21,7 +15,7 @@ namespace WK23012_Main.ViewModels
             {
                 InputData.Add(new InputModel
                 {
-                    ID = i,
+                    //ID = i,
                     ModuleName = $"Module{i}",
                     Name = $"Name{i}",
                     Address = $"Address{i}",
@@ -34,7 +28,7 @@ namespace WK23012_Main.ViewModels
 
     public class InputModel
     {
-        public int ID { get; set; }
+        //public int ID { get; set; }
         public string? ModuleName { get; set; }
         public string? Name { get; set; }
         public string? Address { get; set; }

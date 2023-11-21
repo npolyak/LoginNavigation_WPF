@@ -254,15 +254,6 @@
                         </Button>
 
                     </StackPanel>
-
-                    <!--<StackPanel Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50 0 0 0">
-                        --><!-- Add the ProgressBar below the login button --><!--
-                        <ProgressBar Margin="5" Name="loading" IsIndeterminate="True" Value="0" Height="5" Width="280"/>
-
-                        --><!-- Add a TextBlock for loading message --><!--
-                        <TextBlock Name="loadingResources" Margin="0 30 0 15" FontSize="17" FontWeight="SemiBold" HorizontalAlignment="Left" Text="Loading Resources.."></TextBlock>
-                    </StackPanel>-->
-
                 </Grid>
 
             </Border>

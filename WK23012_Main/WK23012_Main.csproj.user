@@ -43,10 +43,10 @@
     <Compile Update="Views\SystemV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\System\File.xaml.cs">
+    <Compile Update="Views\SystemViews\AddUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\System\User.xaml.cs">
+    <Compile Update="Views\SystemViews\FileV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -96,10 +96,10 @@
     <Page Update="Views\SystemV.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\System\File.xaml">
+    <Page Update="Views\SystemViews\AddUser.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\System\User.xaml">
+    <Page Update="Views\SystemViews\FileV.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -54,7 +54,7 @@ namespace WK23012_Main.Views.System {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WK23012_Main;V1.0.0.0;component/views/system/file.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WK23012_Main;component/views/system/file.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\System\File.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

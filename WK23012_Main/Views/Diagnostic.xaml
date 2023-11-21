@@ -7,25 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <UserControl.DataContext>
+    <!--<UserControl.DataContext>
         <vm:DiagnosticViewModel/>
-    </UserControl.DataContext>
+    </UserControl.DataContext>-->
 
     <Grid>
-        <!-- Define rows and columns -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- Adjust the height based on your needs -->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid>
-            <!-- Search TextBox -->
             <StackPanel>
                 <TextBox x:Name="txtBoxSearch" Style="{StaticResource textBoxSearch}"/>
             </StackPanel>
         </Grid>
 
-        <!-- TabControl -->
         <TabControl Grid.Row="1" Style="{DynamicResource tabControlStyle}">
             <TabItem Header="Input" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
