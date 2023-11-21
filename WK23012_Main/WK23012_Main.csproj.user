@@ -43,12 +43,15 @@
     <Compile Update="Views\SystemV.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\System\File.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\System\User.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Styles\ButtonStyles.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\DropDownMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Diagnostic.xaml">
@@ -91,6 +94,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SystemV.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\System\File.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\System\User.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
-             xmlns:local="clr-namespace:WK23012_Main.Views" xmlns:vm="clr-namespace:WK23012_Main.ViewModels"
+             xmlns:vm="clr-namespace:WK23012_Main.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -19,11 +18,12 @@
             <!-- Adjust the height based on your needs -->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <!-- Search TextBox -->
-        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5">
-            <TextBox x:Name="txtBoxSearch" Style="{StaticResource textBoxSearch}"/>
-        </StackPanel>
+        <Grid>
+            <!-- Search TextBox -->
+            <StackPanel>
+                <TextBox x:Name="txtBoxSearch" Style="{StaticResource textBoxSearch}"/>
+            </StackPanel>
+        </Grid>
 
         <!-- TabControl -->
         <TabControl Grid.Row="1" Style="{DynamicResource tabControlStyle}">
@@ -54,7 +54,7 @@
                     </DataGrid>
                 </Grid>
             </TabItem>
-            
+
             <TabItem Header="Output" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
                     <DataGrid ItemsSource="{Binding InputData}"
@@ -81,7 +81,7 @@
                     </DataGrid>
                 </Grid>
             </TabItem>
-            
+
             <TabItem Header="Motor" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
                     <TextBlock Text="Header2" />
@@ -89,6 +89,5 @@
             </TabItem>
 
         </TabControl>
-
     </Grid>
 </UserControl>

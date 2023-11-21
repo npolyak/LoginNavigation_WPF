@@ -54,7 +54,7 @@ namespace WK23012_Main.Views.Run_Screen {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WK23012_Main;component/views/run%20screen/runparameters.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WK23012_Main;V1.0.0.0;component/views/run%20screen/runparameters.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Run Screen\RunParameters.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

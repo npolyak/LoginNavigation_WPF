@@ -171,7 +171,7 @@
                         <!-- Control Bar -->
                         <RowDefinition Height="25"/>
                         <!-- Header / Caption -->
-                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="25"/>
                         <!-- Content Section  -->
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>

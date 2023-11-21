@@ -556,11 +556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlos.jarquin\\Desktop\\WK23012_Main\\WK23012_Main\\WK23012_Main.csproj",
+      "projectUniqueName": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\WK23012_Main.csproj",
       "projectName": "WK23012_Main",
-      "projectPath": "C:\\Users\\carlos.jarquin\\Desktop\\WK23012_Main\\WK23012_Main\\WK23012_Main.csproj",
+      "projectPath": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\WK23012_Main.csproj",
       "packagesPath": "C:\\Users\\carlos.jarquin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlos.jarquin\\Desktop\\WK23012_Main\\WK23012_Main\\obj\\",
+      "outputPath": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
