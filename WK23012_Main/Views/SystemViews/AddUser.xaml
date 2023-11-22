@@ -5,10 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:WK23012_Main.Views.SystemViews"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <materialDesign:Card UniformCornerRadius="15" Background="Transparent" 
-                         materialDesign:ElevationAssist.Elevation="Dp4" Margin="5">
+             Background="Transparent">
+    
+    <materialDesign:Card Margin="5">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"></ColumnDefinition>
@@ -16,7 +15,7 @@
             </Grid.ColumnDefinitions>
 
             <Border>
-                <StackPanel Width="220"
+                <StackPanel Width="250"
                             Grid.Row="1"
                             Orientation="Vertical"
                             Margin="0,35,0,0">
@@ -24,26 +23,26 @@
                     <TextBlock Text="Add Users"
                                Foreground="Wheat"
                                FontSize="25"
-                               FontWeight="Medium"
+                               FontWeight="SemiBold"
                                FontFamily="Montserrat"
                                HorizontalAlignment="Center"/>
 
                     <TextBlock Text="Username"
                                Foreground="White"
-                               FontSize="12"
-                               FontWeight="Medium"
+                               FontSize="15"
+                               FontWeight="SemiBold"
                                FontFamily="Montserrat"                             
                                Margin="0,35,0,0"/>
 
                     <TextBox x:Name="txtAddUser"
-                             FontSize="13"
-                             FontWeight="Medium"
+                             FontSize="15"
+                             FontWeight="SemiBold"
                              FontFamily="Montserrat"                            
                              Foreground="White"
                              CaretBrush="White"
                              BorderBrush="White"
                              BorderThickness="0,0,0,2"
-                             Height="28"
+                             Height="30"
                              VerticalContentAlignment="Center"
                              Margin="0,5,0,0"
                              Padding="20,0,0,0">
@@ -57,20 +56,20 @@
 
                     <TextBlock Text="Password"
                                Foreground="White"
-                               FontSize="12"
-                               FontWeight="Medium"
+                               FontSize="15"
+                               FontWeight="SemiBold"
                                FontFamily="Montserrat"                             
                                Margin="0,15,0,0"/>
 
                     <TextBox x:Name="txtAddPass"
-                                 FontSize="13"
-                                 FontWeight="Medium"
+                                 FontSize="15"
+                                 FontWeight="SemiBold"
                                  FontFamily="Montserrat"                            
                                  Foreground="White"
                                  CaretBrush="White"
                                  BorderBrush="White"
                                  BorderThickness="0,0,0,2"
-                                 Height="28"
+                                 Height="30"
                                  VerticalContentAlignment="Center"
                                  Margin="0,5,0,0"
                                  Padding="20,0,0,0">
@@ -81,8 +80,60 @@
                         </TextBox.Background>
                     </TextBox>
 
+                    <!-- Add RadioButtons here -->
+                    <StackPanel Margin="0 20 0 0" Orientation="Vertical">
+                        <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                        <RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                        <RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                        <RadioButton Content="Operator" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                    </StackPanel>
+                    <Button x:Name="btnAddUser"                          
+                            BorderThickness="0"
+                            Content="Add User"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,50,0,0">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="{DynamicResource color11}"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="{DynamicResource color5}"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </StackPanel>
             </Border>
+
+            <!-- Second column - Display list of users -->
+            <ListView x:Name="userListView" Grid.Column="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" />
+                        <GridViewColumn Header="Role" DisplayMemberBinding="{Binding Role}" />
+                        <GridViewColumn Header="Action" Width="80">
+                            <!-- Edit and Delete buttons here -->
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
         </Grid>
     </materialDesign:Card>
 

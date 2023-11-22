@@ -15,8 +15,180 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="User" Style="{StaticResource tabItemsGeneral}">
-                    <Grid>
-                        <TextBlock Text="User Edit"/>
+                    <Grid Width="800" Height="500" Background="gray">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                            <ColumnDefinition Width="500"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Border >
+                            <StackPanel Width="250"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+
+                                <TextBlock Text="Add Users"
+                               Foreground="Wheat"
+                               FontSize="25"
+                               FontWeight="SemiBold"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center"/>
+
+                                <TextBlock Text="Username"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="SemiBold"
+                               FontFamily="Montserrat"                             
+                               Margin="0,35,0,0"/>
+
+                                <TextBox x:Name="txtAddUser"
+                             FontSize="15"
+                             FontWeight="SemiBold"
+                             FontFamily="Montserrat"                            
+                             Foreground="White"
+                             CaretBrush="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,2"
+                             Height="30"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+
+                                    <TextBox.Background>
+                                        <ImageBrush ImageSource="/Images/user-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                                    </TextBox.Background>
+                                </TextBox>
+
+                                <TextBlock Text="Password"
+                               Foreground="White"
+                               FontSize="15"
+                               FontWeight="SemiBold"
+                               FontFamily="Montserrat"                             
+                               Margin="0,15,0,0"/>
+
+                                <TextBox x:Name="txtAddPass"
+                                 FontSize="15"
+                                 FontWeight="SemiBold"
+                                 FontFamily="Montserrat"                            
+                                 Foreground="White"
+                                 CaretBrush="White"
+                                 BorderBrush="White"
+                                 BorderThickness="0,0,0,2"
+                                 Height="30"
+                                 VerticalContentAlignment="Center"
+                                 Margin="0,5,0,0"
+                                 Padding="20,0,0,0">
+                                    <TextBox.Background>
+                                        <ImageBrush ImageSource="/Images/key-icon.png"
+                                        Stretch="None"
+                                        AlignmentX="Left"/>
+                                    </TextBox.Background>
+                                </TextBox>
+
+                                <!-- Add RadioButtons here -->
+                                <StackPanel Margin="0 20 0 0" Orientation="Vertical">
+                                    <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                    <RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                    <RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                    <RadioButton Content="Operator" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                </StackPanel>
+                                <Button x:Name="btnAddUser"                          
+                            BorderThickness="0"
+                            Content="Add User"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            FontSize="15"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,50,0,0">
+
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Background" Value="{DynamicResource color11}"/>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="{DynamicResource color5}"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Second column - Display list of users -->
+                        <ListView x:Name="userListView" Grid.Column="1">
+                            <ListView.View>
+                                <GridView>
+                                    <GridView.ColumnHeaderContainerStyle>
+                                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                                            <Setter Property="Background" Value="{DynamicResource color11}" />
+                                            <Setter Property="Foreground" Value="White" />
+                                            <Setter Property="BorderThickness" Value="0,0,0,2" />
+                                            <Setter Property="BorderBrush" Value="White" />
+                                            <Setter Property="Padding" Value="10" />
+                                        </Style>
+                                    </GridView.ColumnHeaderContainerStyle>
+
+                                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Username}" Foreground="White" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+
+                                    <GridViewColumn Header="Role" DisplayMemberBinding="{Binding Role}">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Role}" Foreground="White" />
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+
+                                    <GridViewColumn Header="Action">
+                                        <GridViewColumn.CellTemplate>
+                                            <DataTemplate>
+                                                 <!--Add Edit and Delete buttons here--> 
+                                            </DataTemplate>
+                                        </GridViewColumn.CellTemplate>
+                                    </GridViewColumn>
+                                </GridView>
+                            </ListView.View>
+
+                            <ListView.Resources>
+                                <!-- Alternating row colors -->
+                                <Style TargetType="ListViewItem">
+                                    <Style.Triggers>
+                                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                                            <Setter Property="Background" Value="{DynamicResource color5}" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+
+                                <!-- Hover effect -->
+                                <!--<Style TargetType="ListViewItem">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{DynamicResource color3}" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>-->
+                            </ListView.Resources>
+                        </ListView>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Parameters" Style="{StaticResource tabItemsGeneral}">

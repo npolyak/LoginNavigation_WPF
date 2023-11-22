@@ -227,15 +227,15 @@
                             FontSize="12"
                             FontFamily="Montserrat"
                             Cursor="Hand"                           
-                            Margin="0,50,0,0"
+                            Margin="0,35,0,0"
                             Click="btnLogin_Click">
 
                             <Button.Style>
                                 <Style TargetType="Button">
-                                    <Setter Property="Background" Value="#462AD8"/>
+                                    <Setter Property="Background" Value="{DynamicResource color11}"/>
                                     <Style.Triggers>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#12486B"/>
+                                            <Setter Property="Background" Value="{DynamicResource color5}"/>
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
