@@ -80,7 +80,7 @@
 
             <TabItem Header="Motor" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
-                    <TextBlock Text="Header2" />
+                    <TextBlock Text="Header2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
             </TabItem>
 

@@ -8,7 +8,7 @@
         <Setter Property="Height" Value="50"/>
         <Setter Property="Margin" Value="-5,0,0,5"/>
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{StaticResource plainTextColor3}"/>
+        <Setter Property="Foreground" Value="{StaticResource plainTextColor1}"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -126,38 +126,40 @@
 
     <!-- Tab Control -->
     <Style x:Key="tabControlStyle" TargetType="TabControl">
-        <Setter Property="Background" Value="{DynamicResource titleColor1}"/>
+        <Setter Property="Background" Value="#FBFBFA"/>
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="Padding" Value="5"/>
-        <!--<Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>-->
+        <!--<Setter Property="VerticalAlignment" Value="Center"/>-->
+        <!--<Setter Property="HorizontalAlignment" Value="Center"/>-->
         <!--<Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TabControl">
-                        <Grid SnapsToDevicePixels="True">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
+            <Setter.Value>
+                <ControlTemplate TargetType="TabControl">
+                    <Grid SnapsToDevicePixels="True">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
 
-                            <TabPanel Grid.Row="0"
-                                  Background="Transparent"
-                                  IsItemsHost="True"
-                                  HorizontalAlignment="Left"/>
+                        <TabPanel Grid.Row="0"
+                              Background="Transparent"
+                              IsItemsHost="True"
+                              HorizontalAlignment="Left"/>
 
-                            <Border Grid.Row="1"
-                                CornerRadius="5"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                Background="{TemplateBinding Background}" />
+                        <Border Grid.Row="1"
+                            CornerRadius="5"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Background="{TemplateBinding Background}" >
 
                             <ContentPresenter ContentSource="SelectedContent"
                                           SnapsToDevicePixels="True"
                                           Margin="{TemplateBinding Padding}" />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
+
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
         </Setter>-->
     </Style>
 
@@ -208,20 +210,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    <!-- Execute Buttons -->
-    <Style x:Key="executeButton" TargetType="Button">
-        <!--Normal button style-->
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="Height" Value="35"/>
-        <Setter Property="Width" Value="100"/>
-        <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="FontWeight" Value="Medium"/>
-        <Setter Property="FontFamily" Value="Montserrat"/>
-        <Setter Property="BorderThickness" Value="2,2,2,2"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="Margin" Value="5,0,0,0"/>
-    </Style>
 
     <!-- Textbox Search -->
     <Style x:Key="textBoxSearch" TargetType="TextBox">
@@ -259,7 +247,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-
     </Style>
 
 </ResourceDictionary>

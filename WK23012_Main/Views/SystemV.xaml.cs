@@ -1,28 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Collections.Generic;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WK23012_Main.Views
 {
-    /// <summary>
-    /// Interaction logic for SystemV.xaml
-    /// </summary>
     public partial class SystemV : UserControl
     {
         public SystemV()
         {
             InitializeComponent();
+
+            // Add dummy data
+            List<User> users = new List<User>
+        {
+            new User { Username = "Reg", Roles = new List<string> { "Admin"}, Actions = new List<string> { "Edit", "Delete" } },
+            new User { Username = "Kerl", Roles = new List<string> { "Engineer"}, Actions = new List<string> { "Edit", "Delete" } },
+            new User { Username = "Carlos", Roles = new List<string> { "Technician"}, Actions = new List<string> { "Edit", "Delete" } },
+            new User { Username = "3s", Roles = new List<string> { "Operator"}, Actions = new List<string> { "Edit", "Delete" } },
+            // Add more users as needed
+        };
+
+            userListView.ItemsSource = users;
         }
+    }
+
+    public class User
+    {
+        public string Username { get; set; }
+        public List<string> Roles { get; set; }
+        public List<string> Actions { get; set; }
     }
 }

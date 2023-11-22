@@ -14,8 +14,10 @@
                         <TextBlock Text="File"/>
                     </Grid>
                 </TabItem>
+                
+                <!-- Add User-->
                 <TabItem Header="User" Style="{StaticResource tabItemsGeneral}">
-                    <Grid Width="800" Height="500" Background="gray">
+                    <Grid Width="800" Height="500" Background="#27374D">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="300"></ColumnDefinition>
                             <ColumnDefinition Width="500"></ColumnDefinition>
@@ -23,36 +25,36 @@
 
                         <Border >
                             <StackPanel Width="250"
-                            Grid.Row="1"
-                            Orientation="Vertical"
-                            Margin="0,35,0,0">
+                                        Grid.Row="1"
+                                        Orientation="Vertical"
+                                        Margin="0,35,0,0">
 
                                 <TextBlock Text="Add Users"
-                               Foreground="Wheat"
-                               FontSize="25"
-                               FontWeight="SemiBold"
-                               FontFamily="Montserrat"
-                               HorizontalAlignment="Center"/>
+                                           Foreground="Wheat"
+                                           FontSize="25"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"
+                                           HorizontalAlignment="Center"/>
 
                                 <TextBlock Text="Username"
-                               Foreground="White"
-                               FontSize="15"
-                               FontWeight="SemiBold"
-                               FontFamily="Montserrat"                             
-                               Margin="0,35,0,0"/>
+                                           Foreground="White"
+                                           FontSize="15"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"                             
+                                           Margin="0,35,0,0"/>
 
                                 <TextBox x:Name="txtAddUser"
-                             FontSize="15"
-                             FontWeight="SemiBold"
-                             FontFamily="Montserrat"                            
-                             Foreground="White"
-                             CaretBrush="White"
-                             BorderBrush="White"
-                             BorderThickness="0,0,0,2"
-                             Height="30"
-                             VerticalContentAlignment="Center"
-                             Margin="0,5,0,0"
-                             Padding="20,0,0,0">
+                                         FontSize="15"
+                                         FontWeight="SemiBold"
+                                         FontFamily="Montserrat"                            
+                                         Foreground="White"
+                                         CaretBrush="White"
+                                         BorderBrush="White"
+                                         BorderThickness="0,0,0,2"
+                                         Height="30"
+                                         VerticalContentAlignment="Center"
+                                         Margin="0,5,0,0"
+                                         Padding="20,0,0,0">
 
                                     <TextBox.Background>
                                         <ImageBrush ImageSource="/Images/user-icon.png"
@@ -62,47 +64,54 @@
                                 </TextBox>
 
                                 <TextBlock Text="Password"
-                               Foreground="White"
-                               FontSize="15"
-                               FontWeight="SemiBold"
-                               FontFamily="Montserrat"                             
-                               Margin="0,15,0,0"/>
+                                           Foreground="White"
+                                           FontSize="15"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"                             
+                                           Margin="0,15,0,0"/>
 
                                 <TextBox x:Name="txtAddPass"
-                                 FontSize="15"
-                                 FontWeight="SemiBold"
-                                 FontFamily="Montserrat"                            
-                                 Foreground="White"
-                                 CaretBrush="White"
-                                 BorderBrush="White"
-                                 BorderThickness="0,0,0,2"
-                                 Height="30"
-                                 VerticalContentAlignment="Center"
-                                 Margin="0,5,0,0"
-                                 Padding="20,0,0,0">
+                                         FontSize="15"
+                                         FontWeight="SemiBold"
+                                         FontFamily="Montserrat"                            
+                                         Foreground="White"
+                                         CaretBrush="White"
+                                         BorderBrush="White"
+                                         BorderThickness="0,0,0,2"
+                                         Height="30"
+                                         VerticalContentAlignment="Center"
+                                         Margin="0,5,0,0"
+                                         Padding="20,0,0,0">
                                     <TextBox.Background>
                                         <ImageBrush ImageSource="/Images/key-icon.png"
-                                        Stretch="None"
-                                        AlignmentX="Left"/>
+                                                    Stretch="None"
+                                                    AlignmentX="Left"/>
                                     </TextBox.Background>
                                 </TextBox>
 
                                 <!-- Add RadioButtons here -->
                                 <StackPanel Margin="0 20 0 0" Orientation="Vertical">
-                                    <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                    <TextBlock Text="User Permission Level"
+                                               Foreground="Wheat"
+                                               FontSize="15.5"
+                                               FontWeight="SemiBold"
+                                               FontFamily="Montserrat"                             
+                                               Margin="0,5,0,0"/>
+                                    
+                                    <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 10 0 0"/>
                                     <RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
                                     <RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
                                     <RadioButton Content="Operator" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
                                 </StackPanel>
                                 <Button x:Name="btnAddUser"                          
-                            BorderThickness="0"
-                            Content="Add User"
-                            FontWeight="SemiBold"
-                            Foreground="White"
-                            FontSize="15"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"                           
-                            Margin="0,50,0,0">
+                                        BorderThickness="0"
+                                        Content="Add User"
+                                        FontWeight="SemiBold"
+                                        Foreground="White"
+                                        FontSize="15"
+                                        FontFamily="Montserrat"
+                                        Cursor="Hand"                           
+                                        Margin="0,50,0,0">
 
                                     <Button.Style>
                                         <Style TargetType="Button">
@@ -129,13 +138,13 @@
                             </StackPanel>
                         </Border>
 
-                        <!-- Second column - Display list of users -->
+                        <!-- Display list of users -->
                         <ListView x:Name="userListView" Grid.Column="1">
                             <ListView.View>
                                 <GridView>
                                     <GridView.ColumnHeaderContainerStyle>
                                         <Style TargetType="{x:Type GridViewColumnHeader}">
-                                            <Setter Property="Background" Value="{DynamicResource color11}" />
+                                            <Setter Property="Background" Value="#27374D" />
                                             <Setter Property="Foreground" Value="White" />
                                             <Setter Property="BorderThickness" Value="0,0,0,2" />
                                             <Setter Property="BorderBrush" Value="White" />
@@ -143,54 +152,65 @@
                                         </Style>
                                     </GridView.ColumnHeaderContainerStyle>
 
-                                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}">
+                                    <!-- Username Column -->
+                                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="120">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Username}" Foreground="White" />
+                                                <TextBlock Text="{Binding Username}" Foreground="Black" />
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
 
-                                    <GridViewColumn Header="Role" DisplayMemberBinding="{Binding Role}">
+                                    <!-- Role Column -->
+                                    <GridViewColumn Header="Role" Width="120">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Role}" Foreground="White" />
+                                                <ItemsControl ItemsSource="{Binding Roles}">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <TextBlock Text="{Binding}" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
 
-                                    <GridViewColumn Header="Action">
+                                    <!-- Action Column -->
+                                    <GridViewColumn Header="Action" Width="120">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                 <!--Add Edit and Delete buttons here--> 
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                    <!-- Add Edit and Delete buttons here -->
+                                                    <Button Content="Edit" Margin="0,0,5,0" />
+                                                    <Button Content="Delete" />
+                                                </StackPanel>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
                                 </GridView>
                             </ListView.View>
 
-                            <ListView.Resources>
-                                <!-- Alternating row colors -->
+                            <ListView.ItemContainerStyle>
                                 <Style TargetType="ListViewItem">
                                     <Style.Triggers>
-                                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                                        <!-- Alternating row colors -->
+                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListViewItem}}, Path=(ItemsControl.AlternationIndex)}" Value="1">
+                                            <Setter Property="Background" Value="{DynamicResource color11}" />
+                                        </DataTrigger>
+
+                                        <!-- Hover effect -->
+                                        <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Background" Value="{DynamicResource color5}" />
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
-
-                                <!-- Hover effect -->
-                                <!--<Style TargetType="ListViewItem">
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="{DynamicResource color3}" />
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>-->
-                            </ListView.Resources>
+                            </ListView.ItemContainerStyle>
                         </ListView>
                     </Grid>
                 </TabItem>
+                
+                <!--Parameters Permissions-->
                 <TabItem Header="Parameters" Style="{StaticResource tabItemsGeneral}">
                     <Grid>
                         <TextBlock Text="Parameter Permissions"/>

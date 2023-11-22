@@ -117,12 +117,6 @@
                         </StackPanel>
                     </RadioButton>
 
-                    <!--<Menu>
-                        <MenuItem Header="Module">
-                            
-                        </MenuItem>
-                    </Menu>-->
-
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color4}"
                                  Command="{Binding ShowModuleViewCommand}">
@@ -240,7 +234,7 @@
 
                         </StackPanel>
                     </Grid>
-                    <!-- Content Section  -->
+                     <!--Content Section-->  
                     <ContentControl Content="{Binding CurrentChildView}"
                                     Grid.Row="2"
                                     Margin="10"/>
