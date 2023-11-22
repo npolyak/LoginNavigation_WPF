@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace WK23012_Main.Views
 {
@@ -20,6 +21,11 @@ namespace WK23012_Main.Views
         };
 
             userListView.ItemsSource = users;
+        }
+
+        private void GridViewColumnHeader_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 
