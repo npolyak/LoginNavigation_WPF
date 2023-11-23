@@ -11,7 +11,7 @@ namespace WK23012_Main.ViewModels
             InputData = new ObservableCollection<InputModel>();
 
             // Add dummy data
-            for (int i = 1; i <= 20; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 InputData.Add(new InputModel
                 {

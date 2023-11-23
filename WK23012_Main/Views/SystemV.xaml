@@ -6,44 +6,109 @@
              xmlns:local="clr-namespace:WK23012_Main.Views"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="1200">
-    <Grid>
-        <Border>
+    <Border>
             <TabControl Style="{StaticResource tabControlStyle}">
                 <TabItem Header="File" Style="{StaticResource tabItemsGeneral}">
-                    <Grid>
-                        <TextBlock Text="File"/>
-                    </Grid>
+                    <Border CornerRadius="20" Width="800" Height="500" Background="#45474B">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="300"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Border>
+                                <Grid Grid.Row="0" Margin="0 10 0 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Width="150"
+                                           Text="Current File:"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"
+                                           HorizontalAlignment="Left"
+                                           Margin="10 0 0 0"/>
+                                    <TextBlock x:Name="txtCurrFile"
+                                           Width="150"
+                                           Text="WK23012"
+                                           Foreground="White"
+                                           FontSize="14"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"
+                                           Margin="5,0,0,0"
+                                           HorizontalAlignment="Left"
+                                           Grid.Column="1"/>
+
+                                    <TextBlock Width="150"
+                                           Text="Lead Frame Type:"
+                                           Foreground="White"
+                                           FontSize="16"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"
+                                           HorizontalAlignment="Left"
+                                           Margin="10,40,0,0"/>
+                                    <TextBlock x:Name="txtLeadFrameType"
+                                           Width="100"
+                                           Text="Dictionary"
+                                           Foreground="White"
+                                           FontSize="14"
+                                           FontWeight="SemiBold"
+                                           FontFamily="Montserrat"
+                                           Margin="5,40,0,0"
+                                           HorizontalAlignment="Left"
+                                           Grid.Column="1"/>
+                                </Grid>
+
+                            </Border>
+                            <Grid Grid.Row="1" Margin="0 10 0 0" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="200"/>
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                            <Border>
+
+                            </Border>
+                        </Grid>
+                    </Border>
                 </TabItem>
 
                 <!-- Add User-->
                 <TabItem Header="User" Style="{StaticResource tabItemsGeneral}">
-                    <Grid Width="800" Height="500" Background="#27374D">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="300"></ColumnDefinition>
-                            <ColumnDefinition Width="500"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+                    <Border CornerRadius="20" Width="800" Height="500" Background="#45474B">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="300"></ColumnDefinition>
+                                <ColumnDefinition Width="500"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
 
-                        <Border >
-                            <StackPanel Width="250"
+                            <Border>
+                                <StackPanel Width="250"
                                         Grid.Row="1"
                                         Orientation="Vertical"
                                         Margin="0,35,0,0">
 
-                                <TextBlock Text="Add Users"
+                                    <TextBlock Text="Add Users"
                                            Foreground="Wheat"
                                            FontSize="25"
                                            FontWeight="SemiBold"
                                            FontFamily="Montserrat"
                                            HorizontalAlignment="Center"/>
 
-                                <TextBlock Text="Username"
+                                    <TextBlock Text="Username"
                                            Foreground="White"
                                            FontSize="15"
                                            FontWeight="SemiBold"
                                            FontFamily="Montserrat"                             
                                            Margin="0,35,0,0"/>
 
-                                <TextBox x:Name="txtAddUser"
+                                    <TextBox x:Name="txtAddUser"
                                          FontSize="15"
                                          FontWeight="SemiBold"
                                          FontFamily="Montserrat"                            
@@ -56,21 +121,21 @@
                                          Margin="0,5,0,0"
                                          Padding="20,0,0,0">
 
-                                    <TextBox.Background>
-                                        <ImageBrush ImageSource="/Images/user-icon.png"
+                                        <TextBox.Background>
+                                            <ImageBrush ImageSource="/Images/user-icon.png"
                                         Stretch="None"
                                         AlignmentX="Left"/>
-                                    </TextBox.Background>
-                                </TextBox>
+                                        </TextBox.Background>
+                                    </TextBox>
 
-                                <TextBlock Text="Password"
+                                    <TextBlock Text="Password"
                                            Foreground="White"
                                            FontSize="15"
                                            FontWeight="SemiBold"
                                            FontFamily="Montserrat"                             
                                            Margin="0,15,0,0"/>
 
-                                <TextBox x:Name="txtAddPass"
+                                    <TextBox x:Name="txtAddPass"
                                          FontSize="15"
                                          FontWeight="SemiBold"
                                          FontFamily="Montserrat"                            
@@ -82,28 +147,28 @@
                                          VerticalContentAlignment="Center"
                                          Margin="0,5,0,0"
                                          Padding="20,0,0,0">
-                                    <TextBox.Background>
-                                        <ImageBrush ImageSource="/Images/key-icon.png"
+                                        <TextBox.Background>
+                                            <ImageBrush ImageSource="/Images/key-icon.png"
                                                     Stretch="None"
                                                     AlignmentX="Left"/>
-                                    </TextBox.Background>
-                                </TextBox>
+                                        </TextBox.Background>
+                                    </TextBox>
 
-                                <!-- Add RadioButtons here -->
-                                <StackPanel Margin="0 20 0 0" Orientation="Vertical">
-                                    <TextBlock Text="User Permission Level"
+                                    <!-- Add RadioButtons here -->
+                                    <StackPanel Margin="0 20 0 0" Orientation="Vertical">
+                                        <TextBlock Text="User Permission Level"
                                                Foreground="Wheat"
                                                FontSize="15.5"
                                                FontWeight="SemiBold"
                                                FontFamily="Montserrat"                             
                                                Margin="0,5,0,0"/>
 
-                                    <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 10 0 0"/>
-                                    <RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
-                                    <RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
-                                    <RadioButton Content="Operator" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
-                                </StackPanel>
-                                <Button x:Name="btnAddUser"                          
+                                        <RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 10 0 0"/>
+                                        <RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                        <RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                        <RadioButton Content="Operator" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0 5 0 0"/>
+                                    </StackPanel>
+                                    <Button x:Name="btnAddUser"                          
                                         BorderThickness="0"
                                         Content="Add User"
                                         FontWeight="SemiBold"
@@ -113,117 +178,167 @@
                                         Cursor="Hand"                           
                                         Margin="0,50,0,0">
 
-                                    <Button.Style>
-                                        <Style TargetType="Button">
-                                            <Setter Property="Background" Value="{DynamicResource color11}"/>
-                                            <Style.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Background" Value="{DynamicResource color5}"/>
-                                                </Trigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Button.Style>
+                                        <Button.Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="Background" Value="{DynamicResource color11}"/>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="{DynamicResource color5}"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
 
-                                    <Button.Template>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border Width="150" Height="40"
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Width="150" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
-                                                <ContentPresenter VerticalAlignment="Center"
+                                                    <ContentPresenter VerticalAlignment="Center"
                                                       HorizontalAlignment="Center"/>
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Button.Template>
-                                </Button>
-                            </StackPanel>
-                        </Border>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                </StackPanel>
+                            </Border>
 
-                        <!-- Display list of users -->
-                        <ListView x:Name="userListView" Grid.Column="1" HorizontalAlignment="Left">
-                            <ListView.View>
-                                <GridView>
-                                    <GridView.ColumnHeaderContainerStyle>
-                                        <Style TargetType="{x:Type GridViewColumnHeader}">
-                                            <Setter Property="Background" Value="#27374D" />
-                                            <Setter Property="Foreground" Value="White" />
-                                            <Setter Property="BorderThickness" Value="0,0,0,2" />
-                                            <Setter Property="BorderBrush" Value="White" />
-                                            <Setter Property="Padding" Value="10"/>
-                                            <Setter Property="Margin" Value="0 2 2 0"/>
-                                            <EventSetter Event="PreviewMouseLeftButtonDown" Handler="GridViewColumnHeader_PreviewMouseLeftButtonDown"/>
-                                        </Style>
-                                    </GridView.ColumnHeaderContainerStyle>
+                            <!-- Display list of users -->
+                            <ListView x:Name="userListView" Grid.Column="1" HorizontalAlignment="Left">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridView.ColumnHeaderContainerStyle>
+                                            <Style TargetType="{x:Type GridViewColumnHeader}">
+                                                <Setter Property="Background" Value="#27374D" />
+                                                <Setter Property="Foreground" Value="White" />
+                                                <Setter Property="BorderThickness" Value="0,0,0,2" />
+                                                <Setter Property="BorderBrush" Value="White" />
+                                                <Setter Property="Padding" Value="10"/>
+                                                <Setter Property="Margin" Value="0 2 2 0"/>
+                                                <EventSetter Event="PreviewMouseLeftButtonDown" Handler="GridViewColumnHeader_PreviewMouseLeftButtonDown"/>
+                                            </Style>
+                                        </GridView.ColumnHeaderContainerStyle>
 
-                                    <!-- Username Column -->
-                                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="164">
-                                        <GridViewColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <TextBlock Text="{Binding Username}" Foreground="Black" HorizontalAlignment="Center"/>
-                                            </DataTemplate>
-                                        </GridViewColumn.CellTemplate>
-                                    </GridViewColumn>
+                                        <!-- Username Column -->
+                                        <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="164">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Username}" Foreground="Black" HorizontalAlignment="Center"/>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
 
-                                    <!-- Role Column -->
-                                    <GridViewColumn Header="Role" Width="163">
-                                        <GridViewColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <ItemsControl ItemsSource="{Binding Roles}">
-                                                    <ItemsControl.ItemTemplate>
-                                                        <DataTemplate>
-                                                            <TextBlock Text="{Binding}" Foreground="Black" HorizontalAlignment="Center"/>
-                                                        </DataTemplate>
-                                                    </ItemsControl.ItemTemplate>
-                                                </ItemsControl>
-                                            </DataTemplate>
-                                        </GridViewColumn.CellTemplate>
-                                    </GridViewColumn>
+                                        <!-- Role Column -->
+                                        <GridViewColumn Header="Role" Width="163">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <ItemsControl ItemsSource="{Binding Roles}">
+                                                        <ItemsControl.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding}" Foreground="Black" HorizontalAlignment="Center"/>
+                                                            </DataTemplate>
+                                                        </ItemsControl.ItemTemplate>
+                                                    </ItemsControl>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
 
-                                    <!-- Action Column -->
-                                    <GridViewColumn Header="Action" Width="163">
-                                        <GridViewColumn.CellTemplate>
-                                            <DataTemplate>
-                                                <StackPanel Orientation="Horizontal">
-                                                    <!-- Add Edit and Delete buttons here -->
-                                                    <Button Content="Edit" Margin="0,0,5,0"/>
-                                                    <Button Content="Delete"/>
-                                                </StackPanel>
-                                            </DataTemplate>
-                                        </GridViewColumn.CellTemplate>
-                                    </GridViewColumn>
+                                        <!-- Action Column -->
+                                        <GridViewColumn Header="Action" Width="163">
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <!-- Add Edit and Delete buttons here -->
+                                                        <Button Content="Edit" Margin="0,0,5,0"/>
+                                                        <Button Content="Delete"/>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
 
 
-                                </GridView>
-                            </ListView.View>
+                                    </GridView>
+                                </ListView.View>
 
-                            <ListView.ItemContainerStyle>
-                                <Style TargetType="ListViewItem">
-                                    <Setter Property="Margin" Value="0 0 0 5"/>
-                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                                    <Style.Triggers>
-                                        <!-- Row Color -->
-                                        <Trigger Property="IsSelected" Value="True">
-                                            <Setter Property="Background" Value="{DynamicResource color11}" />
-                                        </Trigger>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Margin" Value="0 0 0 5"/>
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                        <Style.Triggers>
+                                            <!-- Row Color -->
+                                            <Trigger Property="IsSelected" Value="True">
+                                                <Setter Property="Background" Value="{DynamicResource color11}" />
+                                            </Trigger>
 
-                                        <!-- Hover effect -->
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="{DynamicResource color5}" />
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </ListView.ItemContainerStyle>
-                        </ListView>
-
-                    </Grid>
+                                            <!-- Hover effect -->
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="{DynamicResource color5}" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </Grid>
+                    </Border>
                 </TabItem>
 
                 <!--Parameters Permissions-->
                 <TabItem Header="Parameters" Style="{StaticResource tabItemsGeneral}">
-                    <Grid>
-                        <TextBlock Text="Parameter Permissions"/>
-                    </Grid>
+                    <Border CornerRadius="20" Width="800" Height="500" Background="#45474B">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="100"></RowDefinition>
+                                <RowDefinition Height="300"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Border>
+                                <Grid Grid.Row="1" Margin="0 10 0 0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Width="150"
+                                               Text="Current File:"
+                                               Foreground="White"
+                                               FontSize="16"
+                                               FontWeight="SemiBold"
+                                               FontFamily="Montserrat"
+                                               HorizontalAlignment="Left"
+                                               Margin="10 0 0 0"/>
+                                    <TextBlock Width="150"
+                                               Text="WK23012"
+                                               Foreground="White"
+                                               FontSize="14"
+                                               FontWeight="SemiBold"
+                                               FontFamily="Montserrat"
+                                               Margin="5,0,0,0"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1"/>
+
+                                    <TextBlock Width="150"
+                                               Text="Lead Frame Type:"
+                                               Foreground="White"
+                                               FontSize="16"
+                                               FontWeight="SemiBold"
+                                               FontFamily="Montserrat"
+                                               HorizontalAlignment="Left"
+                                               Margin="10,40,0,0"/>
+                                    <TextBlock Width="100"
+                                               Text="Dictionary"
+                                               Foreground="White"
+                                               FontSize="14"
+                                               FontWeight="SemiBold"
+                                               FontFamily="Montserrat"
+                                               Margin="5,40,0,0"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
                 </TabItem>
             </TabControl>
         </Border>
-    </Grid>
 </UserControl>

@@ -26,7 +26,7 @@
             <TabItem Header="Input" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
                     <DataGrid ItemsSource="{Binding InputData}"
-                              AutoGenerateColumns="True"
+                              AutoGenerateColumns="False"
                               ColumnWidth="*"
                               Background="White"
                               BorderThickness="0">
@@ -40,17 +40,17 @@
                             </Style>
                         </DataGrid.ColumnHeaderStyle>
                         <DataGrid.Columns>
-                            <!--<DataGridTextColumn Binding="{Binding ID}" Header="ID"/>
                             <DataGridTextColumn Binding="{Binding ModuleName}" Header="ModuleName"/>
                             <DataGridTextColumn Binding="{Binding Name}" Header="Name"/>
                             <DataGridTextColumn Binding="{Binding Address}" Header="Address"/>
                             <DataGridTextColumn Binding="{Binding Status}" Header="Status"/>
-                            <DataGridTextColumn Binding="{Binding Vendor}" Header="Vendor"/>-->
+                            <DataGridTextColumn Binding="{Binding Vendor}" Header="Vendor"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
             </TabItem>
-
+            
+            <!--Output-->
             <TabItem Header="Output" Style="{DynamicResource tabItemsGeneral}">
                 <Grid>
                     <DataGrid ItemsSource="{Binding InputData}"
