@@ -51,7 +51,7 @@
 
                 <Border Grid.Row="0" Height="1" Background="Black" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,20,0,0"/>
                 
-                <Grid Grid.Row="1" Background="AliceBlue">
+                <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
@@ -59,7 +59,7 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- First Column Box -->
-                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10">
+                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
                         <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
                             <TextBlock Text="System" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
                             <CheckBox Style="{DynamicResource chkCheckbox}" Content="Buzzer"></CheckBox>
@@ -67,7 +67,7 @@
                     </Border>
 
                     <!-- Second Column Box -->
-                    <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="10">
+                    <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
                         <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
                             <TextBlock Text="System" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
                             <CheckBox Style="{DynamicResource chkCheckbox}" Content="Continuously Vacuum"></CheckBox>
@@ -77,7 +77,7 @@
                     </Border>
 
                     <!-- Third Column Box -->
-                    <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="10">
+                    <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
                         <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
                             <TextBlock Text="Idle Time" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
                         </StackPanel>
