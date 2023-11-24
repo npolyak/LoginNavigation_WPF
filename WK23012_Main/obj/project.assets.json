@@ -18,6 +18,18 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/DotNetProjects.DataVisualization.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/DotNetProjects.DataVisualization.Toolkit.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Dragablz/0.0.3.234": {
         "type": "package",
         "compile": {
@@ -124,6 +136,20 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
+    "DotNetProjects.WpfToolkit.DataVisualization/6.1.94": {
+      "sha512": "5xmRUH+/F3zRxcI8b93W9OUvOUKXpcHShj7jGJdpBAgQTNPEeMLISA/wsO5egSG74Msx+01xwaYjDFTDTUawhQ==",
+      "type": "package",
+      "path": "dotnetprojects.wpftoolkit.datavisualization/6.1.94",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetprojects.wpftoolkit.datavisualization.6.1.94.nupkg.sha512",
+        "dotnetprojects.wpftoolkit.datavisualization.nuspec",
+        "lib/net40/DotNetProjects.DataVisualization.Toolkit.dll",
+        "lib/net5.0-windows7.0/DotNetProjects.DataVisualization.Toolkit.dll",
+        "lib/net6.0-windows7.0/DotNetProjects.DataVisualization.Toolkit.dll"
       ]
     },
     "Dragablz/0.0.3.234": {
@@ -543,6 +569,7 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "CommunityToolkit.Mvvm >= 8.2.2",
+      "DotNetProjects.WpfToolkit.DataVisualization >= 6.1.94",
       "Dragablz >= 0.0.3.234",
       "FontAwesome.Sharp >= 6.3.0",
       "MaterialDesignColors >= 2.1.4",
@@ -550,24 +577,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlos.jarquin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\cjarq\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\WK23012_Main.csproj",
+      "projectUniqueName": "C:\\Users\\cjarq\\Desktop\\All\\JS Projects\\LoginNavigation_WPF\\WK23012_Main\\WK23012_Main.csproj",
       "projectName": "WK23012_Main",
-      "projectPath": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\WK23012_Main.csproj",
-      "packagesPath": "C:\\Users\\carlos.jarquin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlos.jarquin\\Documents\\GitHub\\LoginNavigation_MVVM\\WK23012_Main\\obj\\",
+      "projectPath": "C:\\Users\\cjarq\\Desktop\\All\\JS Projects\\LoginNavigation_WPF\\WK23012_Main\\WK23012_Main.csproj",
+      "packagesPath": "C:\\Users\\cjarq\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cjarq\\Desktop\\All\\JS Projects\\LoginNavigation_WPF\\WK23012_Main\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\carlos.jarquin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\cjarq\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -596,6 +618,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.2, )"
+          },
+          "DotNetProjects.WpfToolkit.DataVisualization": {
+            "target": "Package",
+            "version": "[6.1.94, )"
           },
           "Dragablz": {
             "target": "Package",

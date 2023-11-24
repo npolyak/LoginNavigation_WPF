@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Compile Remove="Views\Module\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Views\Module\**" />
+    <None Remove="Models\**" />
+    <None Remove="Views\Module\**" />
+    <Page Remove="Models\**" />
+    <Page Remove="Views\Module\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Images\back-image.jpeg" />
     <None Remove="Images\clear_icon.png" />
     <None Remove="Images\home.jpg" />
@@ -33,12 +44,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Views\Module\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="DotNetProjects.WpfToolkit.DataVisualization" Version="6.1.94" />
     <PackageReference Include="Dragablz" Version="0.0.3.234" />
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
     <PackageReference Include="MaterialDesignColors" Version="2.1.4" />

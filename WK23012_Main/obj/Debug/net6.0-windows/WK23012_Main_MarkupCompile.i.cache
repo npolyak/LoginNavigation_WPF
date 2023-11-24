@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\
 WK23012_Main
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\App.xaml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\App.xaml
 17-929122930
 
 3285611466
-209-874566790
+2101600875983
 Styles\ButtonStyles.xaml;Styles\UIColors.xaml;Views\Diagnostic.xaml;Views\Home.xaml;Views\Login.xaml;Views\MainWindow.xaml;Views\Module.xaml;Views\OvenMap.xaml;Views\Run Screen\ErrorMessage.xaml;Views\Run Screen\GHSECSGEM.xaml;Views\Run Screen\RunParameters.xaml;Views\Run Screen\RunScreenHome.xaml;Views\Run Screen\VacuumProfile.xaml;Views\RunScreen.xaml;Views\SystemV.xaml;Views\SystemViews\AddUser.xaml;Views\SystemViews\FileV.xaml;
 
-False
+True
 

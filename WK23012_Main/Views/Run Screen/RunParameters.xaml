@@ -5,10 +5,86 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WK23012_Main.Views.Run_Screen"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="700" d:DesignWidth="800">
+    
     <Grid>
-        <TextBlock Text="Run Parameters" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
+        <Border Background=" White">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="410"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0" Margin="10 10 0 0">
+                        <StackPanel Orientation="Vertical" Width="400" Height="400" >
+                            <TextBlock Text="Enable Main Frame Sensors" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 7"/>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Filter Power Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Filter Flow Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Filter Temperature Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Ready Connected"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Water Flow Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Water Temperature Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Oven Power Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Oven Temperature Alarm"></CheckBox>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Column="1" Margin="10 38 0 0">
+                        <StackPanel Orientation="Vertical" Width="400" Height="370" >
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Heater Current Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Nitrogen High Flow Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Nitrogen Low Flow Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Nitrogen Pressure Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Main Air Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Door Sensor Alarm"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="O2 Content Alarm"></CheckBox>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+                <Border Grid.Row="0" Height="1" Background="Black" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,20,0,0"/>
+                
+                <Grid Grid.Row="1" Background="AliceBlue">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- First Column Box -->
+                    <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="10">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
+                            <TextBlock Text="System" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Buzzer"></CheckBox>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Second Column Box -->
+                    <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="10">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
+                            <TextBlock Text="System" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Continuously Vacuum"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Oven Map Match"></CheckBox>
+                            <CheckBox Style="{DynamicResource chkCheckbox}" Content="Oven"></CheckBox>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Third Column Box -->
+                    <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="10">
+                        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
+                            <TextBlock Text="Idle Time" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+        
     </Grid>
 </UserControl>

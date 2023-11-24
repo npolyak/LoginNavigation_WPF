@@ -1,28 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Collections.Generic;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WK23012_Main.Views.Run_Screen
 {
-    /// <summary>
-    /// Interaction logic for VacuumProfile.xaml
-    /// </summary>
     public partial class VacuumProfile : UserControl
     {
         public VacuumProfile()
         {
             InitializeComponent();
+
+            // Initialize your ViewModel and set it as the DataContext
+            DataContext = new VacuumProfileViewModel();
+        }
+    }
+
+    public class VacuumProfileViewModel
+    {
+        public VacuumProfileViewModel()
+        {
+            // Initialize Line1 with your data
+            Line1 = new List<Data>
+            {
+                new Data { Col = "N30U", Value = 18000 },
+                // Add other data points as needed
+            };
+        }
+
+        public List<Data> Line1 { get; set; }
+
+        public class Data
+        {
+            public string Col { get; set; }
+            public int Value { get; set; }
         }
     }
 }
