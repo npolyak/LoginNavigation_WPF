@@ -117,6 +117,28 @@
         </Style.Triggers>
     </Style>
 
+    <!--System General Button-->
+    <Style x:Key="systemButton" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource color1}"/>
+        <Setter Property="Foreground" Value="{DynamicResource plainTextColor4}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                            
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!--Menu button icon-->
     <Style x:Key="iconButtonIcon" TargetType="fa:IconImage">
         <Setter Property="Foreground" Value="{Binding Path=Foreground, RelativeSource={RelativeSource AncestorType=Button}}"/>
@@ -288,9 +310,12 @@
                                     CornerRadius="3"
                                     Margin="5">
                                     <Path x:Name="CheckMark"
-                                      Stroke="{TemplateBinding Foreground}"
-                                      StrokeThickness="2"
-                                      Data="M5.5,10.5 L9,14 15,7" />
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          Margin="-1 -5 0 0"
+                                          Stroke="{TemplateBinding Foreground}"
+                                          StrokeThickness="4"
+                                          Data="M5,12 L9,16 18,7" />
                                 </Border>
 
                                 <!-- Content -->
