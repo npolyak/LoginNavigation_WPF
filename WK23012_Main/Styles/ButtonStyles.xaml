@@ -119,8 +119,8 @@
 
     <!--System General Button-->
     <Style x:Key="systemButton" TargetType="Button">
-        <Setter Property="Background" Value="{DynamicResource color1}"/>
-        <Setter Property="Foreground" Value="{DynamicResource plainTextColor4}"/>
+        <Setter Property="Background" Value="{DynamicResource color11}"/>
+        <Setter Property="Foreground" Value="{DynamicResource titleColor1}"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="FontSize" Value="15"/>
         <Setter Property="Height" Value="30"/>
@@ -129,10 +129,32 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border CornerRadius="10" Background="{TemplateBinding Background}" BorderThickness="1">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
-                            
-                        </ContentPresenter>
+                    <Border x:Name="buttonBorder"
+                        CornerRadius="10"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0:0:0.3" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource primaryBackColor1}" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0:0:0.1" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource primaryBackColor2}" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource secondaryBackColor1}" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

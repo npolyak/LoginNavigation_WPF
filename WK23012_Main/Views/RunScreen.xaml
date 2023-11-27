@@ -18,8 +18,6 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-
-
             <Border Grid.Column="0" Background="AntiqueWhite">
                 <Grid Margin="5 0 5 10">
                     <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center">
