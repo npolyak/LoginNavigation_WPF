@@ -5,13 +5,17 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WK23012_Main.Views.Run_Screen"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBox Name="ErrMsg"
-                 Text="This is a test"
+             d:DesignHeight="700" d:DesignWidth="800">
+    
+    <Border CornerRadius="20">
+        <StackPanel Orientation="Vertical">
+            <TextBox Name="ErrMsg"
+                 Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
                  HorizontalAlignment="Center" 
                  VerticalAlignment="Center"
                  Width="700" Height="300">
-        </TextBox>
-    </Grid>
+            </TextBox>
+        </StackPanel>
+
+    </Border>
 </UserControl>
