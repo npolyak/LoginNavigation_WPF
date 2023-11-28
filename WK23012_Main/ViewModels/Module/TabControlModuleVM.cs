@@ -13,8 +13,8 @@ namespace WK23012_Main.ViewModels.Module
         {
             AddTab("Main Frame", new MainFrame());
             AddTab("Clip Reel", new ClipReel());
-            AddTab("AMS BF", new AMS_BF());
             AddTab("OVI", new OVI());
+            AddTab("AMS BF", new AMS_BF());
             //AddTab("Vacuum Profile", new VacuumProfile());
         }
 

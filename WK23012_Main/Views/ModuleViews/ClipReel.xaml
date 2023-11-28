@@ -23,7 +23,7 @@
                 <StackPanel VerticalAlignment="Center" Margin="0 20 0 0">
                     <DockPanel>
                         <Label Content="msec" FontWeight="Bold" DockPanel.Dock="Left" />
-                        <Slider Name="slColor" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10 0 10 0">
+                        <Slider Name="slColor" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10 0 10 0" Height="20" Width="200">
                             <Slider.Background>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#338DF0" Offset="0" />
@@ -40,10 +40,10 @@
                 </StackPanel>
 
                 <StackPanel VerticalAlignment="Center" Margin="0 10 0 0">
-                    <!-- Green Slider -->
                     <DockPanel>
-                        <Label Content="msec" FontWeight="Bold" DockPanel.Dock="Left" />
-                        <Slider Name="slColorG" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10 0 10 0">
+                        <Label Content="msec" FontWeight="Bold" DockPanel.Dock="Left"/>
+                        <Slider Name="slColorG" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" 
+                                Margin="10 0 10 0" Height="20" Width="200">
                             <Slider.Background>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#338DF0" Offset="0" />
@@ -69,10 +69,10 @@
         <Border VerticalAlignment="Center" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="260">
                 <TextBlock Text="Action" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
-                <Button Content="  Initialize  " Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
-                <CheckBox Style="{DynamicResource chkCheckbox}" Content="Initialized  " Margin="0 20 0 0"></CheckBox>
-                <Button Content="  Load  " Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
-                <Button Content="  Save  " Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
+                <Button Content="Initialize" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
+                <CheckBox Style="{DynamicResource chkCheckbox}" Content="Initialized" Margin="0 20 0 0"></CheckBox>
+                <Button Content="Load" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
+                <Button Content="Save" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
             </StackPanel>
         </Border>
     </Grid>
