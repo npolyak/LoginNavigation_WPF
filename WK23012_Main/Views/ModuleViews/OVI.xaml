@@ -70,12 +70,30 @@
             </Border>
 
             <!-- Second Column Box -->
-            <Border VerticalAlignment="Center" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+            <!-- Action Box -->
+            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
                     <TextBlock Text="Action" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
-                    <Button Content="Load Lead Frame" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
-                    <Button Content="Unload Lead Frame" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
-                    <Button Content="Save" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
+                    <Button Content="Load Lead Frame" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
+                    <Button Content="Unload Lead Frame" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
+                </StackPanel>
+            </Border>
+
+            <!-- Clamper Box -->
+            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
+                    <TextBlock Text="Clamper" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
+                    <Button Content="Clamper Up" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
+                    <Button Content="Clamper Down" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
+                </StackPanel>
+            </Border>
+
+            <!-- Stopper Box -->
+            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
+                    <TextBlock Text="Stopper" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
+                    <Button Content="Stopper Up" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
+                    <Button Content="Stopper Down" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
                 </StackPanel>
             </Border>
 
