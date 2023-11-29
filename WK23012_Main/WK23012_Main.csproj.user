@@ -28,7 +28,13 @@
     <Compile Update="Views\ModuleViews\MainFrame.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ModuleViews\MO.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ModuleViews\numericUpDown.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ModuleViews\OVEN.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\ModuleViews\OVI.xaml.cs">
@@ -96,7 +102,13 @@
     <Page Update="Views\ModuleViews\MainFrame.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\ModuleViews\MO.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ModuleViews\numericUpDown.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ModuleViews\OVEN.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ModuleViews\OVI.xaml">

@@ -248,3 +248,7 @@ C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\D
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.pdb
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\WK23012_Main.genruntimeconfig.cache
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\ref\WK23012_Main.dll
+C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MO.g.cs
+C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.g.cs
+C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MO.baml
+C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.baml

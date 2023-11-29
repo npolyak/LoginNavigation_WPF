@@ -21,8 +21,8 @@
 
             <!-- First Column Box -->
             <Border VerticalAlignment="Center" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="330" Height="300">
-                    <TextBlock Text="Parameters" Foreground="{DynamicResource titleColor4}" FontSize="16" FontWeight="SemiBold" Margin="0 5 0 0"/>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="300" Height="360">
+                    <TextBlock Text="Parameters" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                     <TextBlock Text="Stop After Movement:" Foreground="{DynamicResource titleColor4}" FontSize="15" FontWeight="SemiBold" Margin="0 18 0 0"/>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="165 -25 0 0">
                         <local:numericUpDown Width="100"/>
@@ -61,36 +61,25 @@
                         </DockPanel>
                     </StackPanel>
 
-                    <StackPanel Orientation="Horizontal" Width="330" Height="90" Margin="0 10 0 0">
+                    <StackPanel Orientation="Horizontal" Width="330" Height="90" Margin="0 30 0 0">
                         <TextBlock Text="Status" Foreground="{DynamicResource titleColor4}" FontSize="16" FontWeight="SemiBold" Margin="0 5 0 0"/>
-                        <CheckBox Style="{DynamicResource chkCheckbox}" Content="Load Sensor " Margin="-25 20 0 0"></CheckBox>
+                        <CheckBox Style="{DynamicResource chkCheckbox}" Content="Load Sensor " Margin="-40 20 0 0"></CheckBox>
                         <CheckBox Style="{DynamicResource chkCheckbox}" Content="Unload Sensor " Margin="10 20 0 0"></CheckBox>
                     </StackPanel>
                 </StackPanel>
             </Border>
 
             <!-- Second Column Box -->
-            <!-- Action Box -->
-            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
+            <Border VerticalAlignment="Center" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="300" Height="360">
                     <TextBlock Text="Action" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                     <Button Content="Load Lead Frame" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
                     <Button Content="Unload Lead Frame" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
-                </StackPanel>
-            </Border>
 
-            <!-- Clamper Box -->
-            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
                     <TextBlock Text="Clamper" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                     <Button Content="Clamper Up" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
                     <Button Content="Clamper Down" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
-                </StackPanel>
-            </Border>
 
-            <!-- Stopper Box -->
-            <Border Grid.Column="1" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
                     <TextBlock Text="Stopper" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                     <Button Content="Stopper Up" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
                     <Button Content="Stopper Down" Style="{DynamicResource systemButton}" Margin="0 10 0 0"></Button>
@@ -99,7 +88,7 @@
 
             <!-- Third Column Box -->
             <Border VerticalAlignment="Center" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="300">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="300" Height="360">
                     <TextBlock Text="Execute" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                     <Button Content="Initialize" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
                     <CheckBox Style="{DynamicResource chkCheckbox}" Content="Initialized" Margin="0 20 0 0"></CheckBox>
@@ -109,7 +98,7 @@
             </Border>
         </Grid>
 
-
+        <!-- Text -->
         <Grid Grid.Row="1">
             <Border>
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">

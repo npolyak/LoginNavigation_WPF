@@ -350,7 +350,6 @@
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <!-- Add any additional triggers or states here -->
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
                         </Trigger>

@@ -8,14 +8,14 @@
              d:DesignHeight="450" d:DesignWidth="1000">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="450"></ColumnDefinition>
-            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <!-- First Column Box -->
         <Border VerticalAlignment="Center" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="400" Height="260">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="260">
                 <TextBlock Text="Delay After Reel Start:" Foreground="{DynamicResource titleColor4}" FontSize="15" FontWeight="SemiBold" Margin="0 20 0 0"/>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="165 -25 0 0">
                     <local:numericUpDown Width="100"/>
@@ -58,7 +58,7 @@
 
         <!-- Second Column Box -->
         <Border VerticalAlignment="Center" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="260">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="260">
                 <TextBlock Text="Status" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="0 10 0 0" Padding="0 0 0 2"/>
                 <CheckBox Style="{DynamicResource chkCheckbox}" Content="Start Sensor  " Margin="0 20 0 0"></CheckBox>
                 <CheckBox Style="{DynamicResource chkCheckbox}" Content="Stop Sensor  " Margin="0 20 0 0"></CheckBox>
@@ -67,7 +67,7 @@
 
         <!-- Third Column Box -->
         <Border VerticalAlignment="Center" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="240" Height="260">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="260">
                 <TextBlock Text="Action" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="5 10 0 0" Padding="0 0 0 2"/>
                 <Button Content="Initialize" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
                 <CheckBox Style="{DynamicResource chkCheckbox}" Content="Initialized" Margin="0 20 0 0"></CheckBox>

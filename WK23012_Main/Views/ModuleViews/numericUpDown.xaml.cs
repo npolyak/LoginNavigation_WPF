@@ -8,24 +8,42 @@ namespace WK23012_Main.Views.ModuleViews
         public numericUpDown()
         {
             InitializeComponent();
+            txtNum.Text = _numValue.ToString();
         }
 
-        private void IncreaseValue(object sender, RoutedEventArgs e)
+        private int _numValue = 0;
+        public int NumValue
         {
-            if (int.TryParse(NumericTextBox.Text, out int value))
+            get { return _numValue; }
+            set
             {
-                value++;
-                NumericTextBox.Text = value.ToString();
+                if (value >= 0)
+                {
+                    _numValue = value;
+                    txtNum.Text = value.ToString();
+                }
             }
         }
 
-        private void DecreaseValue(object sender, RoutedEventArgs e)
+        private void CmdUp_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(NumericTextBox.Text, out int value) && value > 0)
+            NumValue++;
+        }
+
+        private void CmdDown_Click(object sender, RoutedEventArgs e)
+        {
+            NumValue--;
+        }
+
+        private void TxtNum_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtNum == null)
             {
-                value--;
-                NumericTextBox.Text = value.ToString();
+                return;
             }
+
+            if (!int.TryParse(txtNum.Text, out _numValue))
+                txtNum.Text = _numValue.ToString();
         }
 
     }

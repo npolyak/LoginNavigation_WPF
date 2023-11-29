@@ -15,7 +15,8 @@ namespace WK23012_Main.ViewModels.Module
             AddTab("Clip Reel", new ClipReel());
             AddTab("OVI", new OVI());
             AddTab("AMS BF", new AMS_BF());
-            //AddTab("Vacuum Profile", new VacuumProfile());
+            AddTab("OVEN", new OVEN());
+            AddTab("MO", new MO());
         }
 
         private void AddTab(string header, UserControl content)
