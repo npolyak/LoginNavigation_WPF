@@ -117,6 +117,50 @@
         </Style.Triggers>
     </Style>
 
+    <!--System General Button-->
+    <Style x:Key="systemButton" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource color11}"/>
+        <Setter Property="Foreground" Value="{DynamicResource titleColor1}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="buttonBorder"
+                        CornerRadius="10"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="MouseOver">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0:0:0.3" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource primaryBackColor1}" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0:0:0.1" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource primaryBackColor2}" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Disabled">
+                                    <Storyboard>
+                                        <ColorAnimation Duration="0" Storyboard.TargetName="buttonBorder" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" To="{DynamicResource secondaryBackColor1}" />
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!--Menu button icon-->
     <Style x:Key="iconButtonIcon" TargetType="fa:IconImage">
         <Setter Property="Foreground" Value="{Binding Path=Foreground, RelativeSource={RelativeSource AncestorType=Button}}"/>
@@ -288,9 +332,12 @@
                                     CornerRadius="3"
                                     Margin="5">
                                     <Path x:Name="CheckMark"
-                                      Stroke="{TemplateBinding Foreground}"
-                                      StrokeThickness="2"
-                                      Data="M5.5,10.5 L9,14 15,7" />
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          Margin="-1 -5 0 0"
+                                          Stroke="{TemplateBinding Foreground}"
+                                          StrokeThickness="4"
+                                          Data="M5,12 L9,16 18,7" />
                                 </Border>
 
                                 <!-- Content -->
@@ -303,9 +350,14 @@
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <!-- Add any additional triggers or states here -->
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource color11}"/>
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="BorderBrush" Value="{DynamicResource color11}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="False">
                             <Setter TargetName="CheckMark" Property="Visibility" Value="Collapsed" />

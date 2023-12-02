@@ -65,7 +65,7 @@ namespace WK23012_Main.ViewModels
         public ICommand ShowRunScreenViewCommand { get; }
         public ICommand ShowModuleViewCommand { get; }
         public ICommand ShowDiagnosticViewCommand { get; }
-        public ICommand ShowOvenMapViewCommand { get; }
+        //public ICommand ShowOvenMapViewCommand { get; }
 
         public MainViewModel()
         {
@@ -76,7 +76,7 @@ namespace WK23012_Main.ViewModels
             ShowModuleViewCommand = new ViewModelCommand(ExecuteModuleViewCommand);
             ShowRunScreenViewCommand = new ViewModelCommand(ExecuteShowRunScreenCommand);
             ShowDiagnosticViewCommand = new ViewModelCommand(ExecuteDiagnosticViewCommand);
-            ShowOvenMapViewCommand = new ViewModelCommand(ExecuteOvenMapViewCommand);
+            //ShowOvenMapViewCommand = new ViewModelCommand(ExecuteOvenMapViewCommand);
 
             //Default view
             ExecuteShowHomeViewCommand(null);
@@ -117,11 +117,11 @@ namespace WK23012_Main.ViewModels
             Icon = IconChar.Stethoscope;
         }
 
-        private void ExecuteOvenMapViewCommand(object obj)
-        {
-            CurrentChildView = new OvenMapViewModel();
-            Caption = "OvenMap";
-            Icon = IconChar.KitchenSet;
-        }
+        //private void ExecuteOvenMapViewCommand(object obj)
+        //{
+        //    CurrentChildView = new OvenMapViewModel();
+        //    Caption = "OvenMap";
+        //    Icon = IconChar.KitchenSet;
+        //}
     }
 }
