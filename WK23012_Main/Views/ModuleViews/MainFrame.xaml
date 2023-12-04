@@ -28,9 +28,25 @@
                 <TextBlock Text="Output Control" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="0 10 0 0" Padding="0 0 0 2"/>
                 <Button Content="Turn ON/OFF Vacuum" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
                 <Button Content="Turn On/Off SERVO" Style="{DynamicResource systemButton}" Margin="0 20 0 0"></Button>
+<<<<<<< HEAD
             </StackPanel>
         </Border>
 
+=======
+
+                <ComboBox>
+                    <ComboBoxItem Content="Hello"></ComboBoxItem>
+                    <ComboBoxItem Content="Hi"></ComboBoxItem>
+                    <ComboBoxItem Content="Yup"></ComboBoxItem>
+                </ComboBox>
+                
+            </StackPanel>
+            
+
+        </Border>
+
+
+>>>>>>> 949ce1bd9afc0595638aca06117cdfb3dd327bc7
         <!-- Third Column Box -->
         <Border VerticalAlignment="Center" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="200">

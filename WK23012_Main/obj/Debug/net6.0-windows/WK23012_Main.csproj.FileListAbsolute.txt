@@ -252,3 +252,20 @@ C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\D
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.g.cs
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MO.baml
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.baml
+<<<<<<< HEAD
+=======
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MainFrame.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\numericUpDown.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\AMS_BF.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\ClipReel.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MainFrame.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MO.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\numericUpDown.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVI.g.cs
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\AMS_BF.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\ClipReel.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\MO.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVEN.baml
+C:\Users\cjarq\Desktop\All\JS Projects\LoginNavigation_WPF\WK23012_Main\obj\Debug\net6.0-windows\Views\ModuleViews\OVI.baml
+>>>>>>> 949ce1bd9afc0595638aca06117cdfb3dd327bc7
