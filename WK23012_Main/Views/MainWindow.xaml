@@ -13,10 +13,6 @@
         Background="Transparent"
         AllowsTransparency="True">
 
-    <!--<Window.DataContext>
-        <view:MainViewModel />
-    </Window.DataContext>-->
-
     <Window.Resources>
 
         <DataTemplate DataType="{x:Type view:HomeViewModel}">
@@ -38,10 +34,6 @@
 
         <DataTemplate DataType="{x:Type view:DiagnosticViewModel}">
             <local:Diagnostic/>
-        </DataTemplate>
-
-        <DataTemplate DataType="{x:Type view:OvenMapViewModel}">
-            <local:OvenMap/>
         </DataTemplate>
 
     </Window.Resources>

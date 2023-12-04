@@ -11,7 +11,7 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
-    <Folder Include="Views\Diagnostic\" />
+    <AvaloniaXaml Remove="Assets\Styles\MainStyles.axaml" />
     <Folder Include="Views\System\" />
     <Folder Include="Views\RunScreen\" />
   </ItemGroup>
@@ -31,5 +31,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\RunScreen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Update="Assets\Styles\MainStyles.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
   </ItemGroup>
 </Project>

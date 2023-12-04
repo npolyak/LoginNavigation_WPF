@@ -76,7 +76,6 @@ namespace WK23012_Main.ViewModels
             ShowModuleViewCommand = new ViewModelCommand(ExecuteModuleViewCommand);
             ShowRunScreenViewCommand = new ViewModelCommand(ExecuteShowRunScreenCommand);
             ShowDiagnosticViewCommand = new ViewModelCommand(ExecuteDiagnosticViewCommand);
-            ShowOvenMapViewCommand = new ViewModelCommand(ExecuteOvenMapViewCommand);
 
             //Default view
             ExecuteShowHomeViewCommand(null);
@@ -115,13 +114,6 @@ namespace WK23012_Main.ViewModels
             CurrentChildView = new DiagnosticViewModel();
             Caption = "Diagnostic";
             Icon = IconChar.Stethoscope;
-        }
-
-        private void ExecuteOvenMapViewCommand(object obj)
-        {
-            CurrentChildView = new OvenMapViewModel();
-            Caption = "OvenMap";
-            Icon = IconChar.KitchenSet;
         }
     }
 }
