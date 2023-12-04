@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WK23012_Main.Views.ModuleViews"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="1000">
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
