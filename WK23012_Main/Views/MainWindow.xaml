@@ -40,10 +40,6 @@
             <local:Diagnostic/>
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type view:OvenMapViewModel}">
-            <local:OvenMap/>
-        </DataTemplate>
-
     </Window.Resources>
 
     <Border CornerRadius="10"                    

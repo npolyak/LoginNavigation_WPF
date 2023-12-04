@@ -40,9 +40,6 @@
     <Compile Update="Views\ModuleViews\OVI.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\OvenMap.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\Run Screen\ErrorMessage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -112,9 +109,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ModuleViews\OVI.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\OvenMap.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Run Screen\ErrorMessage.xaml">

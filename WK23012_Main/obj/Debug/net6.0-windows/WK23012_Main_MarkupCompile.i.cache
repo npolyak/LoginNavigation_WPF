@@ -1,5 +1,5 @@
 ﻿WK23012_Main
-
+1.0.0.0
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\carlos.jarquin\Documents\GitHub\LoginNavigation_MVVM\WK23012_Main\App.xaml
 23-1151458237
 
-37-998828518
+39154762497
 210-990416492
 Styles\ButtonStyles.xaml;Styles\UIColors.xaml;Views\Diagnostic.xaml;Views\Home.xaml;Views\Login.xaml;Views\MainWindow.xaml;Views\Module.xaml;Views\ModuleViews\AMS_BF.xaml;Views\ModuleViews\ClipReel.xaml;Views\ModuleViews\MainFrame.xaml;Views\ModuleViews\MO.xaml;Views\ModuleViews\numericUpDown.xaml;Views\ModuleViews\OVEN.xaml;Views\ModuleViews\OVI.xaml;Views\Run Screen\ErrorMessage.xaml;Views\Run Screen\GHSECSGEM.xaml;Views\Run Screen\RunParameters.xaml;Views\Run Screen\RunScreenHome.xaml;Views\Run Screen\VacuumProfile.xaml;Views\RunScreen.xaml;Views\SystemV.xaml;Views\SystemViews\AddUser.xaml;Views\SystemViews\FileV.xaml;
 
