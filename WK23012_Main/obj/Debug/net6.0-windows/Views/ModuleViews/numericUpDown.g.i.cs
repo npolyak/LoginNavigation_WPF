@@ -80,11 +80,7 @@ namespace WK23012_Main.Views.ModuleViews {
                 return;
             }
             _contentLoaded = true;
-<<<<<<< HEAD
-            System.Uri resourceLocater = new System.Uri("/WK23012_Main;V1.0.0.0;component/views/moduleviews/numericupdown.xaml", System.UriKind.Relative);
-=======
             System.Uri resourceLocater = new System.Uri("/WK23012_Main;component/views/moduleviews/numericupdown.xaml", System.UriKind.Relative);
->>>>>>> 949ce1bd9afc0595638aca06117cdfb3dd327bc7
             
             #line 1 "..\..\..\..\..\Views\ModuleViews\numericUpDown.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
