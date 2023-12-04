@@ -2,7 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Mac_project.App"
              xmlns:local="using:Mac_project"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Default"
+             xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
@@ -10,6 +11,6 @@
     </Application.DataTemplates>
   
     <Application.Styles>
-        <FluentTheme />
+         <themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
     </Application.Styles>
 </Application>
