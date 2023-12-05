@@ -6,33 +6,32 @@
              xmlns:components="clr-namespace:Mac_project.Views.RunScreen;assembly=Mac_project"
              x:Class="Mac_project.Views.RunScreen.main">
 
-  <StackPanel Margin="16, 20">
-    <WrapPanel>
-      <StackPanel
-        Orientation="Vertical"
-        VerticalAlignment="Center"
+	<StackPanel Margin="16, 20">
+		<WrapPanel>
+			<StackPanel
+			  Orientation="Vertical"
+			  VerticalAlignment="Center"
       >
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-          </Grid.ColumnDefinitions>
-          <Grid.RowDefinitions>
-            <RowDefinition Height="auto"></RowDefinition>
-            <RowDefinition Height="auto"></RowDefinition>
-          </Grid.RowDefinitions>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="auto"></RowDefinition>
+						<RowDefinition Height="auto"></RowDefinition>
+					</Grid.RowDefinitions>
 
-          <components:statusCard Grid.Column="0" Grid.Row="0" />
-          <components:vacuumPumpCard Grid.Column="1" Grid.Row="0"  Margin="10, 0" />
-          <components:vacuumOvenStatusCard
-            Grid.Column="0"
-            Grid.Row="1"
-            Margin="0, 10"
+					<components:statusCard Grid.Column="0" Grid.Row="0" />
+					<components:vacuumPumpCard Grid.Column="1" Grid.Row="0"  Margin="10, 0" />
+					<components:vacuumOvenStatusCard
+					  Grid.Column="0"
+					  Grid.Row="1"
+					  Margin="0, 10"
           />
-        </Grid>
-        <components:vacuumOvenStatusList Margin="0, 10"/>
-      </StackPanel>
-    </WrapPanel>
-  </StackPanel>
+				</Grid>
+				<components:vacuumOvenStatusList Margin="0, 10"/>
+			</StackPanel>
+		</WrapPanel>
+	</StackPanel>
 </UserControl>
-

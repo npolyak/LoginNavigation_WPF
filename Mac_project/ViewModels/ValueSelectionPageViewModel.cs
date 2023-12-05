@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using Mac_project.ViewModels;
 
 namespace Mac_project.ViewModels;
 
