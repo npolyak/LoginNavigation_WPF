@@ -39,9 +39,4 @@
       <SubType>Designer</SubType>
     </AvaloniaResource>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Update="Templates\ContentExample.axaml.cs">
-      <DependentUpon>ContentExample.axaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
 </Project>

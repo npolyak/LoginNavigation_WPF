@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="Mac_project.App"
              xmlns:local="using:Mac_project"
-             RequestedThemeVariant="Default"
+             RequestedThemeVariant="Dark"
              xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles">
 	
 	<Application.DataTemplates>
@@ -11,7 +11,6 @@
 
 	<Application.Styles>
 		<themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
-		<StyleInclude Source="avares://Mac_project/Templates/ContentExample.axaml" />
 		<StyleInclude Source="avares://Mac_project/Assets/Icons.axaml"/>
 	</Application.Styles>
 </Application>

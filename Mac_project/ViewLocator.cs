@@ -7,21 +7,21 @@ namespace Mac_project;
 
 public class ViewLocator : IDataTemplate
 {
-    public Control? Build(object? data)
+    public Control Build(object? data)
     {
         if (data is null)
-            return null;
-        
-        var name = data.GetType().FullName!.Replace("ViewModel", "View", StringComparison.Ordinal);
+        {
+            return new TextBlock { Text = "Given view model is NULL." };
+        }
+
+        var name = data.GetType().FullName!.Replace("ViewModel", "View");
         var type = Type.GetType(name);
 
         if (type != null)
         {
-            var control = (Control)Activator.CreateInstance(type)!;
-            control.DataContext = data;
-            return control;
+            return (Control)Activator.CreateInstance(type)!;
         }
-        
+
         return new TextBlock { Text = "Not Found: " + name };
     }
 
@@ -29,5 +29,5 @@ public class ViewLocator : IDataTemplate
     {
         return data is ViewModelBase;
     }
-}
 
+}
