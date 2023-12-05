@@ -12,6 +12,7 @@
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
     <AvaloniaXaml Remove="Assets\Styles\MainStyles.axaml" />
+    <Folder Include="Views\Diagnostic\" />
     <Folder Include="Views\System\" />
     <Folder Include="Views\RunScreen\" />
   </ItemGroup>

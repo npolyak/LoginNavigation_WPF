@@ -61,7 +61,7 @@ public class MainWindowViewModel : ViewModelBase
     private void ExecuteShowHomeViewCommand(object obj)
     {
         CurrentChildView = new Dashboard();
-        Caption = "Home";
+        Caption = "Dashboard";
     }
 
     private void ExecuteShowSystemViewCommand(object obj)
