@@ -4,7 +4,6 @@
              xmlns:local="using:Mac_project"
              RequestedThemeVariant="Default"
              xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles">
-	<!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 	
 	<Application.DataTemplates>
 		<local:ViewLocator/>
@@ -12,5 +11,7 @@
 
 	<Application.Styles>
 		<themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
+		<StyleInclude Source="avares://Mac_project/Templates/ContentExample.axaml" />
+		<StyleInclude Source="avares://Mac_project/Assets/Icons.axaml"/>
 	</Application.Styles>
 </Application>
