@@ -11,7 +11,7 @@
 
 	<Application.Styles>
 		<FluentTheme />
-		<themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
+		<themes:MaterialTheme PrimaryColor="Purple" SecondaryColor="Lime" />
 		<StyleInclude Source="avares://Mac_project/Assets/Icons.axaml"/>
 	</Application.Styles>
 </Application>

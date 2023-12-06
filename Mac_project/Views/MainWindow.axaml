@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:styles="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
+        mc:Ignorable="d" d:DesignWidth="1150" d:DesignHeight="720"
         x:Class="Mac_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Mac_project" Width="1000" Height="650">
+        Title="Mac_project" Width="1135" Height="720">
 
 	<!-- <runScreen:main /> -->
 
@@ -19,7 +19,7 @@
 	<SplitView IsPaneOpen="{Binding IsPaneOpen}"
                CompactPaneLength="48"
                DisplayMode="CompactInline"
-               OpenPaneLength="220"
+               OpenPaneLength="170"
                Background="#1e1e1e"
                PaneBackground="#1e1e1e">
 		<SplitView.Pane>
@@ -37,7 +37,11 @@
 				<ListBox Margin="5 0" Padding="0" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedListItem}">
 					<ListBox.Styles>
 						<Style Selector="ListBoxItem">
-							<Setter Property="Padding" Value="12 8"></Setter>
+							<Setter Property="Padding" Value="12 8"/>
+							<Setter Property="FontSize" Value="15"/>
+							<Setter Property="Foreground" Value="White"/>
+							<Setter Property="FontFamily" Value="Montserrat"/>
+							<Setter Property="Margin" Value="0 10 0 0" />
 						</Style>
 					</ListBox.Styles>
 					<ListBox.ItemTemplate>
