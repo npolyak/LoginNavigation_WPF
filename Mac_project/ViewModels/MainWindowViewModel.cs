@@ -29,11 +29,11 @@ public partial class MainWindowViewModel : ViewModelBase
 
     public ObservableCollection<ListItemTemplate> Items { get; } = new()
     {
-        new ListItemTemplate(typeof(DashboardViewModel), "HomeRegular"),
-        new ListItemTemplate(typeof(SystemViewModel), "CursorHoverRegular"),
-        new ListItemTemplate(typeof(RunScreenViewModel), "TextNumberFormatRegular"),
-        new ListItemTemplate(typeof(ModuleViewModel), "CalendarCheckmarkRegular"),
-        new ListItemTemplate(typeof(DiagnosticViewModel), "CalendarCheckmarkRegular"),
+        new ListItemTemplate(typeof(DashboardViewModel), "dashboard"),
+        new ListItemTemplate(typeof(SystemViewModel), "system"),
+        new ListItemTemplate(typeof(RunScreenViewModel), "runscreen"),
+        new ListItemTemplate(typeof(ModuleViewModel), "module"),
+        new ListItemTemplate(typeof(DiagnosticViewModel), "diagnostic"),
     };
 
     [RelayCommand]
