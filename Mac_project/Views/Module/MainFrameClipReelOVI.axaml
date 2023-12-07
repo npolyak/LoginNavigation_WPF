@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="680"
+			 xmlns:components="clr-namespace:Mac_project.Views.Module;assembly=Mac_project"
+             x:Class="Mac_project.Views.Module.MainFrameClipReelOVI">
+
+	<StackPanel Margin="16, 20">
+		<WrapPanel >
+			<StackPanel Orientation="Vertical"
+						VerticalAlignment="Center">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="auto"></RowDefinition>
+						<RowDefinition Height="auto"></RowDefinition>
+					</Grid.RowDefinitions>
+
+					<components:MainFrame Grid.Column="0" Grid.Row="0" />
+					<components:Clip_Reel Grid.Column="1" Grid.Row="0"  Margin="10, 0" />
+				</Grid>
+			</StackPanel>
+		</WrapPanel>
+	</StackPanel>
+</UserControl>

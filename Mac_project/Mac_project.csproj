@@ -11,9 +11,15 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
+    <AvaloniaXaml Remove="Views\Diagnostic\**" />
+    <AvaloniaXaml Remove="Views\System\**" />
+    <Compile Remove="Views\Diagnostic\**" />
+    <Compile Remove="Views\System\**" />
+    <EmbeddedResource Remove="Views\Diagnostic\**" />
+    <EmbeddedResource Remove="Views\System\**" />
+    <None Remove="Views\Diagnostic\**" />
+    <None Remove="Views\System\**" />
     <AvaloniaXaml Remove="Assets\Icons.axaml" />
-    <Folder Include="Views\Diagnostic\" />
-    <Folder Include="Views\System\" />
     <Folder Include="Views\RunScreen\" />
   </ItemGroup>
 

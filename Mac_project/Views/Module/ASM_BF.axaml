@@ -2,10 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="680"
-			 xmlns:vm="using:Mac_project.ViewModels"
-			 xmlns:module="clr-namespace:Mac_project.Views.Module;assembly=Mac_project"
-             x:Class="Mac_project.Views.ModuleView">
-			 
-			 <module:MainFrameClipReelOVI/>
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Mac_project.Views.Module.ASM_BF">
+  Welcome to Avalonia!
 </UserControl>
