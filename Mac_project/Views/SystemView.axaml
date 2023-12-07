@@ -1,0 +1,50 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="clr-namespace:Mac_project.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"             x:Class="Mac_project.Views.SystemView"
+			 x:DataType="vm:SystemViewModel">
+
+	<Grid RowDefinitions="Auto, *" Margin="10">
+		<TextBlock Grid.Row="0" Classes="Headline6" Text="System"/>
+
+		<Border Grid.Row="1" Margin="10">
+			<StackPanel>
+				<StackPanel.Styles>
+					<Style Selector="WrapPanel#ItemsPanel > DockPanel">
+						<Setter Property="Width" Value="500"/>
+						<Setter Property="Height" Value="400"/>
+						<Setter Property="Margin" Value="8"/>
+					</Style>
+					<Style Selector="TextBlock.Centered">
+						<Setter Property="HorizontalAlignment" Value="Center"/>
+						<Setter Property="VerticalAlignment" Value="Center"/>
+					</Style>
+					<Style Selector="DockPanel > TextBlock, DockPanel > TabControl">
+						<Setter Property="DockPanel.Dock" Value="Top"/>
+					</Style>
+				</StackPanel.Styles>
+
+				<!--System Menu - Tab Control-->
+				<DockPanel>
+					<TabControl>
+						<TabControl.Items>
+							<TabItem Header="Item 1">
+								<TextBlock Classes="Centered" Text="Page 1"/>
+							</TabItem>
+							<TabItem Header="Item 2">
+								<TextBlock Classes="Centered" Text="Page 2"/>
+							</TabItem>
+							<TabItem Header="Item 3">
+								<TextBlock Classes="Centered" Text="Page 3"/>
+							</TabItem>
+						</TabControl.Items>
+					</TabControl>
+				</DockPanel>
+			</StackPanel>
+		</Border>
+	</Grid>
+  
+  
+</UserControl>

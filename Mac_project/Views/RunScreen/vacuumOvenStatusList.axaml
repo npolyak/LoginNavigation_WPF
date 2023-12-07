@@ -1,0 +1,34 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+             xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:vm="clr-namespace:Mac_project.ViewModels;assembly=Mac_project"
+             x:DataType="vm:RunScreenViewModel"
+             x:Class="Mac_project.Views.RunScreen.vacuumOvenStatusList">
+
+  <controls:Card>
+    <ItemsControl
+      Height="200"
+      ItemsSource="{Binding vacuumOvenStatus}">
+
+      <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+          <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10, 0" MaxWidth="700" />
+        </ItemsPanelTemplate>
+      </ItemsControl.ItemsPanel>
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <Button
+            Margin="5"
+            Width="150"
+            Content="{Binding Name}"
+          />
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </controls:Card>
+</UserControl>
+

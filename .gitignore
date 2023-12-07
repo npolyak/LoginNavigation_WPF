@@ -1,2 +1,7 @@
 
 *.user
+**/bin
+**/debug
+**/obj
+**/.vs
+**/WK23012_Main
