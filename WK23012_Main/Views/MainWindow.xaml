@@ -13,10 +13,6 @@
         Background="Transparent"
         AllowsTransparency="True">
 
-    <!--<Window.DataContext>
-        <view:MainViewModel />
-    </Window.DataContext>-->
-
     <Window.Resources>
 
         <DataTemplate DataType="{x:Type view:HomeViewModel}">
