@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WK23012_Main.Views.Run_Screen"
+             xmlns:local="clr-namespace:WK23012_Main.Views.Run_Screen" xmlns:local1="clr-namespace:WK23012_Main.Views.ModuleViews"
              mc:Ignorable="d" 
              d:DesignHeight="700" d:DesignWidth="800">
     
@@ -80,6 +80,9 @@
                     <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
                         <StackPanel Orientation="Vertical" VerticalAlignment="Top" Width="240" Height="250">
                             <TextBlock Text="Idle Time" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Padding="0 0 0 2"/>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 5 0 0">
+                                <local1:numericUpDown Width="100"/>
+                            </StackPanel>
                         </StackPanel>
                     </Border>
                 </Grid>

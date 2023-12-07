@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="WK23012_Main.Views.ModuleViews.ClipReel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WK23012_Main.Views.ModuleViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1000">
+    <Grid Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- First Row Box -->
+            <UniformGrid Columns="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" Width="700" Height="50" Margin="0 10 0 0">
+                <Button Content="Initialize" Style="{DynamicResource systemButton}" Margin="5"></Button>
+                <Button Content="Load" Style="{DynamicResource systemButton}" Margin="15 0 0 0"></Button>
+                <Button Content="Save" Style="{DynamicResource systemButton}" Margin="15 0 0 0"></Button>
+            </UniformGrid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!-- First Column Box -->
+                <Border VerticalAlignment="Center" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="260">
+                        <TextBlock Text="Delay After Reel Start:" Foreground="{DynamicResource titleColor4}" FontSize="15" FontWeight="SemiBold" Margin="0 20 0 0"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="165 -25 0 0">
+                            <local:numericUpDown Width="100"/>
+                        </StackPanel>
+                        <StackPanel VerticalAlignment="Center" Margin="0 20 0 0">
+                            <DockPanel>
+                                <Label Content="msec" FontWeight="Bold" DockPanel.Dock="Left" />
+                                <Slider Name="slColor" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10 0 10 0" Height="20" Width="200">
+                                    <Slider.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#338DF0" Offset="0" />
+                                            <GradientStop Color="#78A3FC" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </Slider.Background>
+                                </Slider>
+                            </DockPanel>
+                        </StackPanel>
+
+                        <TextBlock Text="Delay After Reel Stop:" Foreground="{DynamicResource titleColor4}" FontSize="15" FontWeight="SemiBold" Margin="0 30 0 0"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="165 -25 0 10">
+                            <local:numericUpDown Width="100"/>
+                        </StackPanel>
+
+                        <StackPanel VerticalAlignment="Center" Margin="0 10 0 0">
+                            <DockPanel>
+                                <Label Content="msec" FontWeight="Bold" DockPanel.Dock="Left"/>
+                                <Slider Name="slColorG" Maximum="4" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" 
+                                Margin="10 0 10 0" Height="20" Width="200">
+                                    <Slider.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#338DF0" Offset="0" />
+                                            <GradientStop Color="#78A3FC" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </Slider.Background>
+                                </Slider>
+                            </DockPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Second Column Box -->
+                <Border VerticalAlignment="Center" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="3" CornerRadius="20" Background="AliceBlue">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="280" Height="260">
+                        <TextBlock Text="Status" Foreground="{DynamicResource titleColor4}" FontSize="17" FontWeight="SemiBold" Margin="0 10 0 0" Padding="0 0 0 2"/>
+                        <CheckBox Style="{DynamicResource chkCheckbox}" Content="Start Sensor  " Margin="0 20 0 0"></CheckBox>
+                        <CheckBox Style="{DynamicResource chkCheckbox}" Content="Stop Sensor  " Margin="0 20 0 0"></CheckBox>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -127,14 +127,14 @@
                         </StackPanel>
                     </RadioButton>
 
-                    <RadioButton Style="{StaticResource menuButton}"
+                    <!--<RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color6}"
                                  Command="{Binding ShowOvenMapViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="KitchenSet" Style="{StaticResource menuButtonIcon}"/>
                             <TextBlock Text="OvenMap" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
-                    </RadioButton>
+                    </RadioButton>-->
 
 
                 </StackPanel>
