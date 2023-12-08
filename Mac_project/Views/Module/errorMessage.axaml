@@ -1,0 +1,31 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+			 xmlns:vm="clr-namespace:Mac_project.ViewModels;assembly=Mac_project"
+			 x:DataType="vm:ModuleViewModel"
+             x:Class="Mac_project.Views.Module.errorMessage">
+
+	<controls:Card>
+		<StackPanel Orientation="Vertical" Margin="10,5">
+			<StackPanel.Styles>
+				<Style Selector="StackPanel > TextBlock">
+					<Setter Property="VerticalAlignment" Value="Bottom" />
+				</Style>
+			</StackPanel.Styles>
+
+			<TextBlock Classes="Headline6" Text="Error Messages" />
+			<ScrollViewer VerticalScrollBarVisibility="Visible" Height="120" Margin="0,0,0,2">
+				<TextBox
+				  TextWrapping="Wrap"
+				  IsReadOnly="True"
+				  LineHeight="20"
+				  Text="Error Message"
+        />
+			</ScrollViewer>
+		</StackPanel>
+	</controls:Card>
+</UserControl>

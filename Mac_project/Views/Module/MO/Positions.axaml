@@ -1,0 +1,119 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             x:Class="Mac_project.Views.Module.MO.Positions">
+
+	<controls:Card>
+		<StackPanel Orientation="Vertical" Margin="10, 5">
+			<StackPanel.Styles>
+				<Style Selector="StackPanel > TextBlock">
+					<Setter Property="VerticalAlignment" Value="Bottom" />
+				</Style>
+			</StackPanel.Styles>
+
+			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,5" />
+			<TextBlock Classes="Headline6" Text="OM" Margin="0,0,0,5"/>
+
+			<!-- Execute Buttons-->
+			<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 0 0 10 ">
+				<StackPanel Orientation="Vertical">
+					<Button Content="Initialize" Background="#338DF0" Width="90" />
+				</StackPanel>
+				<StackPanel Orientation="Vertical">
+					<Button Content="Load" Margin="5,0,0,0" Background="Gray" Width="90" />
+				</StackPanel>
+				<StackPanel Orientation="Vertical" >
+					<Button Content="Save" Margin="5,0,0,0" Background="Gray" Width="90" />
+				</StackPanel>
+			</StackPanel>
+
+			<!-- Status-->
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+				<StackPanel Orientation="Vertical">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
+						</Grid.ColumnDefinitions>
+						
+						<!-- First Column-->
+						<StackPanel Grid.Column="0" Orientation="Vertical">
+							<TextBlock Classes="Subtitle1" Text="Positions" FontWeight="Medium"/>
+							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Load: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Offset: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="Load" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Offset" Background="Gray" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Unload: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Offset: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="Unload" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Offset" Background="Gray" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="First: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Last: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="First" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Last" Background="Gray" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+						</StackPanel>
+
+						<!-- Second Column-->
+						<StackPanel Grid.Column="1" Orientation="Vertical" Margin="10 18 0 0">
+
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Pusher Back: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Pusher Push: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Pusher Wait: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="4 0 0 0"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="Home" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Out" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Wait" Background="Gray" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Delay Before Push: " VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Total Slot: " VerticalAlignment="Center" Margin="64 0 0 0"/>
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+							</StackPanel>
+						</StackPanel>
+					</Grid>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+	</controls:Card>
+</UserControl>

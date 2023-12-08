@@ -12,31 +12,20 @@
 			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,5" />
 
 			<TextBlock Classes="Headline6" Text="Main Frame" />
-			<TextBlock Classes="Subtitle1" Text="Input Status" Margin="0 10 0 0"/>
-			<StackPanel Orientation="Horizontal">
-				<StackPanel Orientation="Vertical">
-					<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-						<CheckBox IsChecked="True">Run</CheckBox>
-					</StackPanel>
-					<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-						<CheckBox IsChecked="True">Stop</CheckBox>
-					</StackPanel>
-				</StackPanel>
-			</StackPanel>
 
 			<TextBlock Classes="Subtitle1" Text="Output Control" Margin="0 15 0 0"/>
 			<StackPanel Orientation="Vertical" VerticalAlignment="Center">
 				<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-					<Button Content="Turn ON/OFF Vacuum" Margin="0,5,0,0" Background="#338DF0" Width="170" />
+					<ToggleSwitch Content=" VACUUM" IsChecked="False" Margin="0,5,0,0"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-					<Button Content="Turn ON/OFF Servo" Margin="0,5,0,0" Background="#338DF0" Width="170" />
+					<ToggleSwitch Content=" SERVO" IsChecked="False" Margin="0,5,0,0"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-					<Button Content="Technician Mode" Margin="0,5,0,0" Background="#338DF0" Width="170" />
+					<Button Content="Technician Mode" Margin="0,5,0,0" Background="Gray" Width="150" />
 				</StackPanel>
 				<StackPanel Orientation="Horizontal"  Margin="0,10,0,0">
-					<Button Content="Production Mode" Margin="0,5,0,0" Background="#338DF0" Width="170" />
+					<Button Content="Production Mode" Margin="0,5,0,0" Background="Gray" Width="150" />
 				</StackPanel>
 			</StackPanel>
 

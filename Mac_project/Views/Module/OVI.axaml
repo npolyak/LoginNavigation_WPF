@@ -5,7 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
 			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-             x:Class="Mac_project.Views.Module.ASM_BF">
+             x:Class="Mac_project.Views.Module.OVI">
 
 	<controls:Card>
 		<StackPanel Orientation="Vertical" Margin="10, 5">
@@ -16,7 +16,7 @@
 			</StackPanel.Styles>
 
 			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,5" />
-			<TextBlock Classes="Headline6" Text="AMS_BF" Margin="0,0,0,5"/>
+			<TextBlock Classes="Headline6" Text="OVI" Margin="0,0,0,5"/>
 
 			<!-- Execute Buttons-->
 			<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 0 0 10 ">
@@ -45,8 +45,9 @@
 					</StackPanel>
 					<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
 						<TextBlock Classes="Subtitle1" Text="Status" VerticalAlignment="Center" Margin="0 10 0 0"/>
-						<StackPanel Orientation="Vertical"  Margin="5,10,0,0">
-							<CheckBox IsChecked="True" VerticalAlignment="Top">Unload Sensor</CheckBox>
+						<StackPanel Orientation="Horizontal"  Margin="5,10,0,0">
+							<CheckBox IsChecked="True" VerticalAlignment="Top">Load Sensor</CheckBox>
+							<CheckBox IsChecked="False" VerticalAlignment="Top">Unload Sensor</CheckBox>
 						</StackPanel>
 					</StackPanel>
 
@@ -55,13 +56,15 @@
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="Auto"/>
 							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition Width="Auto"/>
 						</Grid.ColumnDefinitions>
 
 						<!-- Action Section -->
 						<StackPanel Grid.Column="0" Orientation="Vertical">
-							<TextBlock Classes="Subtitle1" Text="Action" FontWeight="Medium"/>
-							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
-								<Button Content="Start" Background="#338DF0" Width="90"/>
+							<TextBlock Classes="Subtitle1" Text="Lead Frame" FontWeight="Medium"/>
+							<StackPanel Orientation="Vertical" Margin="0 10 0 0">
+								<Button Content="Load" Background="Gray" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Unload" Background="Gray" Width="90" Margin="0 0 10 10"/>
 							</StackPanel>
 						</StackPanel>
 
@@ -69,8 +72,17 @@
 						<StackPanel Grid.Column="1" Orientation="Vertical" Margin="20 0 0 0">
 							<TextBlock Classes="Subtitle1" Text="Clamper" FontWeight="Medium"/>
 							<StackPanel Orientation="Vertical" Margin="0 10 0 0">
-								<Button Content="Up" Background="#338DF0" Width="90" Margin="0 0 0 10"/>
-								<Button Content="Down" Background="#338DF0" Width="90"/>
+								<Button Content="Up" Background="#338DF0" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Down" Background="#338DF0" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+						</StackPanel>
+
+						<!-- Stopper Section -->
+						<StackPanel Grid.Column="2" Orientation="Vertical" Margin="20 0 0 0">
+							<TextBlock Classes="Subtitle1" Text="Stopper" FontWeight="Medium"/>
+							<StackPanel Orientation="Vertical" Margin="0 10 0 0">
+								<Button Content="Up" Background="#338DF0" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Down" Background="#338DF0" Width="90" Margin="0 0 10 10"/>
 							</StackPanel>
 						</StackPanel>
 					</Grid>
