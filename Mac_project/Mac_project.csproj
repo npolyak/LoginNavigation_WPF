@@ -9,15 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
-    <AvaloniaXaml Remove="Views\Diagnostic\**" />
     <AvaloniaXaml Remove="Views\System\**" />
-    <Compile Remove="Views\Diagnostic\**" />
     <Compile Remove="Views\System\**" />
-    <EmbeddedResource Remove="Views\Diagnostic\**" />
     <EmbeddedResource Remove="Views\System\**" />
-    <None Remove="Views\Diagnostic\**" />
     <None Remove="Views\System\**" />
     <AvaloniaXaml Remove="Assets\Icons.axaml" />
     <Folder Include="Views\RunScreen\" />
@@ -26,6 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.5" />
+    <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.5" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.5" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.5" />
@@ -43,5 +39,8 @@
     <AvaloniaResource Update="Assets\Icons.axaml">
       <SubType>Designer</SubType>
     </AvaloniaResource>
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Module\MO\Status.axaml" />
   </ItemGroup>
 </Project>

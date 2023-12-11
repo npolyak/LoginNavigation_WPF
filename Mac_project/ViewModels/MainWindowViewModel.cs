@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Mac_project.Models.Diagnostic;
 
 namespace Mac_project.ViewModels;
 
@@ -35,6 +37,27 @@ public partial class MainWindowViewModel : ViewModelBase
         new ListItemTemplate(typeof(ModuleViewModel), "module", "Module"),
         new ListItemTemplate(typeof(DiagnosticViewModel), "diagnostic", "Diagnostic"),
     };
+
+
+    /// <summary>
+    /// ////////////////////////////////////////////////////////
+    /// </summary>
+    //Input, Outputs and Motors List
+    public ObservableCollection<Person> People { get; }
+
+    public MainWindowViewModel()
+    {
+        var people = new List<Person>
+            {
+                new Person("Neil", "Armstrong", false),
+                new Person("Buzz", "Lightyear", true),
+                new Person("James", "Kirk", true)
+            };
+        People = new ObservableCollection<Person>(people);
+    }
+    /// <summary>
+    /// ////////////////////////////////////////////////////////
+    /// </summary>
 
     [RelayCommand]
     private void TriggerPane()
