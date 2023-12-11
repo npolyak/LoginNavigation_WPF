@@ -2,8 +2,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 			 xmlns:vm="clr-namespace:Mac_project.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"             x:Class="Mac_project.Views.SystemView"
+			 xmlns:module="clr-namespace:Mac_project.Views.Module.MO;assembly=Mac_project"
+			 x:Class="Mac_project.Views.SystemView"
+			 xmlns:components="clr-namespace:Mac_project.Views.Module.OM;assembly=Mac_project"
 			 x:DataType="vm:SystemViewModel">
 
 	<Grid RowDefinitions="Auto, *" Margin="10">
@@ -33,7 +36,7 @@
 							<TabItem Header="Item 1">
 								<TextBlock Classes="Centered" Text="Page 1"/>
 							</TabItem>
-							<TabItem Header="Item 2">
+							<TabItem Header="Users">
 								<TextBlock Classes="Centered" Text="Page 2"/>
 							</TabItem>
 							<TabItem Header="Item 3">

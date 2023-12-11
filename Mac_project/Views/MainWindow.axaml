@@ -8,7 +8,7 @@
         x:Class="Mac_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Mac_project" Width="1135" Height="720">
+        Title="Mac_project" Width="1135" Height="770">
 
 	<!-- <runScreen:main /> -->
 

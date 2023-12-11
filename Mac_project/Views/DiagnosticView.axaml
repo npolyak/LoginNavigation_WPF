@@ -3,6 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:vm="using:Mac_project.ViewModels"
+			 xmlns:diagnostic="clr-namespace:Mac_project.Views.Diagnostic;assembly=Mac_project"
              x:Class="Mac_project.Views.DiagnosticView">
- THIS IS THE DIAGNOSTIC
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+	
+	<diagnostic:DiagnosticData/>
 </UserControl>

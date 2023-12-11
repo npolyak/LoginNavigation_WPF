@@ -51,7 +51,12 @@ public partial class MainWindowViewModel : ViewModelBase
             {
                 new Person("Neil", "Armstrong", false),
                 new Person("Buzz", "Lightyear", true),
-                new Person("James", "Kirk", true)
+                new Person("James", "Kirk", true),
+                new Person("Carlos", "Jarquin", true),
+                new Person("Kerling", "Washington", true),
+                new Person("Claire", "Darce", true),
+                new Person("Regina", "Support", true),
+                new Person("Mayra", "Jarquin", true)
             };
         People = new ObservableCollection<Person>(people);
     }
