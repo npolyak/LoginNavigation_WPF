@@ -3,11 +3,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-			 xmlns:vm="clr-namespace:Mac_project.ViewModels"
-			 xmlns:module="clr-namespace:Mac_project.Views.Module.MO;assembly=Mac_project"
-			 x:Class="Mac_project.Views.SystemView"
-			 xmlns:components="clr-namespace:Mac_project.Views.Module.OM;assembly=Mac_project"
-			 x:DataType="vm:SystemViewModel">
+			 xmlns:vm="using:Mac_project.ViewModels"
+			 xmlns:systemUsers="clr-namespace:Mac_project.Views.System.Users;assembly=Mac_project"
+			 xmlns:systemFiles="clr-namespace:Mac_project.Views.System.Files;assembly=Mac_project"
+			 x:Class="Mac_project.Views.SystemView">
 
 	<Grid RowDefinitions="Auto, *" Margin="5">
 		<TextBlock Grid.Row="0" Classes="Headline6" Text="System"/>
@@ -33,13 +32,13 @@
 				<DockPanel>
 					<TabControl>
 						<TabControl.Items>
-							<TabItem Header="Item 1">
+							<TabItem Header="File" Foreground="White">
 								<TextBlock Classes="Centered" Text="Page 1"/>
 							</TabItem>
-							<TabItem Header="Users">
-								<TextBlock Classes="Centered" Text="Page 2"/>
+							<TabItem Header="Users" Foreground="White">
+								<systemUsers:mainUsers/>
 							</TabItem>
-							<TabItem Header="Item 3">
+							<TabItem Header="Parameters" Foreground="White">
 								<TextBlock Classes="Centered" Text="Page 3"/>
 							</TabItem>
 						</TabControl.Items>

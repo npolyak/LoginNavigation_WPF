@@ -10,10 +10,6 @@
 
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
-    <AvaloniaXaml Remove="Views\System\**" />
-    <Compile Remove="Views\System\**" />
-    <EmbeddedResource Remove="Views\System\**" />
-    <None Remove="Views\System\**" />
     <AvaloniaXaml Remove="Assets\Icons.axaml" />
     <Folder Include="Views\RunScreen\" />
   </ItemGroup>

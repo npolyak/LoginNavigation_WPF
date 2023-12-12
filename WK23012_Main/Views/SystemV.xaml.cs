@@ -10,14 +10,13 @@ namespace WK23012_Main.Views
         {
             InitializeComponent();
 
-            // Add dummy data
+            // Dummy data
             List<User> users = new List<User>
         {
             new User { Username = "Reg", Roles = new List<string> { "Admin"}, Actions = new List<string> { "Edit", "Delete" } },
             new User { Username = "Kerl", Roles = new List<string> { "Engineer"}, Actions = new List<string> { "Edit", "Delete" } },
             new User { Username = "Carlos", Roles = new List<string> { "Technician"}, Actions = new List<string> { "Edit", "Delete" } },
             new User { Username = "3s", Roles = new List<string> { "Operator"}, Actions = new List<string> { "Edit", "Delete" } },
-            // Add more users as needed
         };
 
             userListView.ItemsSource = users;
