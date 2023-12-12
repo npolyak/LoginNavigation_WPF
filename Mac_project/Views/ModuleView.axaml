@@ -2,10 +2,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="680"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
 			 xmlns:vm="using:Mac_project.ViewModels"
 			 xmlns:module="clr-namespace:Mac_project.Views.Module;assembly=Mac_project"
+			 xmlns:moduleOM="clr-namespace:Mac_project.Views.Module.MO;assembly=Mac_project"
+			 xmlns:moduleOVEN="clr-namespace:Mac_project.Views.Module.OVEN;assembly=Mac_project"
              x:Class="Mac_project.Views.ModuleView">
+
+	<StackPanel>
+		<Grid RowDefinitions="Auto, *" Margin="5">
+			<TextBlock Grid.Row="0" Classes="Headline6" Text="Module"/>
+
+			<Border Grid.Row="1" Margin="5">
+				<StackPanel>
+					<StackPanel.Styles>
+						<Style Selector="WrapPanel#ItemsPanel > DockPanel">
+							<Setter Property="Width" Value="500"/>
+							<Setter Property="Height" Value="400"/>
+							<Setter Property="Margin" Value="8"/>
+						</Style>
+						<Style Selector="TextBlock.Centered">
+							<Setter Property="HorizontalAlignment" Value="Center"/>
+							<Setter Property="VerticalAlignment" Value="Center"/>
+						</Style>
+						<Style Selector="DockPanel > TextBlock, DockPanel > TabControl">
+							<Setter Property="DockPanel.Dock" Value="Top"/>
+						</Style>
+					</StackPanel.Styles>
+
+					<!-- Module Menu - Tab Control-->
+					<DockPanel>
+						<TabControl>
+							<TabControl.Items>
+								<TabItem Header="MF-CL-AMS-OVI" Foreground="White">
+									<module:MainFrameClipReelOVI/>
+								</TabItem>
+								<TabItem Header="OVEN" Foreground="White">
+									<moduleOVEN:main/>
+								</TabItem>
+								<TabItem Header="MO" Foreground="White">
+									<moduleOM:main/>
+								</TabItem>
+							</TabControl.Items>
+						</TabControl>
+					</DockPanel>
+				</StackPanel>
+			</Border>
+		</Grid>
+	</StackPanel>
 			 
-			 <module:MainFrameClipReelOVI/>
+	
 </UserControl>

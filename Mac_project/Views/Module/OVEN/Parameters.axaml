@@ -2,11 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
 			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-             x:Class="Mac_project.Views.Module.MO.Positions">
-
+             x:Class="Mac_project.Views.Module.OVEN.Parameters">
 	<controls:Card>
 		<StackPanel Orientation="Vertical" Margin="10, 5">
 			<StackPanel.Styles>
@@ -16,7 +15,7 @@
 			</StackPanel.Styles>
 
 			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,5" />
-			<TextBlock Classes="Headline6" Text="MO" Margin="0,0,0,5"/>
+			<TextBlock Classes="Headline6" Text="OVEN" Margin="0,0,0,5"/>
 
 			<!-- Execute Buttons-->
 			<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 0 0 10 ">
@@ -40,7 +39,7 @@
 							<ColumnDefinition Width="Auto"/>
 							<ColumnDefinition Width="Auto"/>
 						</Grid.ColumnDefinitions>
-						
+
 						<!-- First Column-->
 						<StackPanel Grid.Column="0" Orientation="Vertical">
 							<TextBlock Classes="Subtitle1" Text="Positions" FontWeight="Medium"/>
@@ -105,17 +104,10 @@
 							</StackPanel>
 						</StackPanel>
 						<!-- Third Column-->
-						
-						
+
+
 						<StackPanel Grid.Column="2" Orientation="Vertical" Margin="10 15 0 0">
-							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Delay Before Push: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Total Slot: " VerticalAlignment="Center" Margin="64 0 0 0"/>
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
+
 						</StackPanel>
 					</Grid>
 				</StackPanel>

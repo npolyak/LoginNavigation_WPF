@@ -43,22 +43,22 @@ public partial class MainWindowViewModel : ViewModelBase
     /// ////////////////////////////////////////////////////////
     /// </summary>
     //Input, Outputs and Motors List
-    public ObservableCollection<Person> People { get; }
+    public ObservableCollection<Input_Output> IOMotors { get; }
 
     public MainWindowViewModel()
     {
-        var people = new List<Person>
+        var iomotors = new List<Input_Output>
             {
-                new Person("Neil", "Armstrong", false),
-                new Person("Buzz", "Lightyear", true),
-                new Person("James", "Kirk", true),
-                new Person("Carlos", "Jarquin", true),
-                new Person("Kerling", "Washington", true),
-                new Person("Claire", "Darce", true),
-                new Person("Regina", "Support", true),
-                new Person("Mayra", "Jarquin", true)
+                new Input_Output("Neil", "Armstrong", "Test", false),
+                new Input_Output("Buzz", "Lightyear", "Test", true),
+                new Input_Output("James", "Kirk", "Test", true),
+                new Input_Output("Carlos", "Jarquin", "Test", true),
+                new Input_Output("Kerling", "Washington", "Test", true),
+                new Input_Output("Claire", "Darce", "Test", true),
+                new Input_Output("Regina", "Support", "Test", true),
+                new Input_Output("Mayra", "Jarquin", "Test", true)
             };
-        People = new ObservableCollection<Person>(people);
+        IOMotors = new ObservableCollection<Input_Output>(iomotors);
     }
     /// <summary>
     /// ////////////////////////////////////////////////////////

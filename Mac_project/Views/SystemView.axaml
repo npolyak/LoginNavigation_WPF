@@ -9,10 +9,10 @@
 			 xmlns:components="clr-namespace:Mac_project.Views.Module.OM;assembly=Mac_project"
 			 x:DataType="vm:SystemViewModel">
 
-	<Grid RowDefinitions="Auto, *" Margin="10">
+	<Grid RowDefinitions="Auto, *" Margin="5">
 		<TextBlock Grid.Row="0" Classes="Headline6" Text="System"/>
 
-		<Border Grid.Row="1" Margin="10">
+		<Border Grid.Row="1" Margin="5">
 			<StackPanel>
 				<StackPanel.Styles>
 					<Style Selector="WrapPanel#ItemsPanel > DockPanel">

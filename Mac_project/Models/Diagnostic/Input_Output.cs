@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Mac_project.Models.Diagnostic
 {
-    public class Person
+    public class Input_Output
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public bool IsFictitious { get; set; }
+        public string ModuleName { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public bool Status { get; set; }
 
-        public Person(string firstName, string lastName, bool isFictitious)
+        public Input_Output(string moduleName, string name, string address, bool status)
         {
-            FirstName = firstName;
-            LastName = lastName;
-            IsFictitious = isFictitious;
+            ModuleName = moduleName;
+            Name = name;
+            Address = address;
+            Status = status;
         }
     }
 }

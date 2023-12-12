@@ -3,12 +3,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Mac_project.Views.DashboardView">
-	<Grid RowDefinitions="Auto, *" Margin="5">
-		<TextBlock Grid.Row="0" Classes="Headline6" Text="Dashboard"/>
-		
-		<Border Grid.Row="1">
-			<Image Source="/Assets/home.jpg" Height="320"/>
-		</Border>
-	</Grid>
+			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             x:Class="Mac_project.Views.Module.OVEN.ChamberControl">
+  Welcome to Avalonia!
 </UserControl>
