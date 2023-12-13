@@ -34,13 +34,13 @@
 					<DockPanel>
 						<TabControl>
 							<TabControl.Items>
-								<TabItem Header="MF-CL-AMS-OVI" Foreground="White">
+								<TabItem Header="MF-CL-AMS-OVI" Foreground="White" FontSize="16">
 									<module:MainFrameClipReelOVI/>
 								</TabItem>
-								<TabItem Header="OVEN" Foreground="White">
+								<TabItem Header="OVEN" Foreground="White" FontSize="16">
 									<moduleOVEN:main/>
 								</TabItem>
-								<TabItem Header="MO" Foreground="White">
+								<TabItem Header="MO" Foreground="White" FontSize="16">
 									<moduleOM:main/>
 								</TabItem>
 							</TabControl.Items>

@@ -32,13 +32,13 @@
 				<DockPanel>
 					<TabControl>
 						<TabControl.Items>
-							<TabItem Header="File" Foreground="White">
+							<TabItem Header="File" Foreground="White" FontSize="16">
 								<TextBlock Classes="Centered" Text="Page 1"/>
 							</TabItem>
-							<TabItem Header="Users" Foreground="White">
+							<TabItem Header="Users" Foreground="White" FontSize="16">
 								<systemUsers:mainUsers/>
 							</TabItem>
-							<TabItem Header="Parameters" Foreground="White">
+							<TabItem Header="Parameters" Foreground="White" FontSize="16">
 								<TextBlock Classes="Centered" Text="Page 3"/>
 							</TabItem>
 						</TabControl.Items>
