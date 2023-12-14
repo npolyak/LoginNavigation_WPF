@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
              xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
              x:Class="Mac_project.Views.System.Users.addUsers">
@@ -19,15 +19,21 @@
 				<StackPanel Width="250" Orientation="Vertical" Margin="0,35,0,0">
 					<TextBlock Text="Add Users" Foreground="Wheat" FontSize="25" FontWeight="SemiBold" FontFamily="Montserrat" HorizontalAlignment="Center"/>
 					<TextBlock Text="Username" Foreground="White" FontSize="15" FontWeight="SemiBold" FontFamily="Montserrat" Margin="0,35,0,0"/>
-					<TextBox x:Name="txtAddUser" FontSize="15" FontWeight="SemiBold" FontFamily="Montserrat" Foreground="White" CaretBrush="White" BorderBrush="White" BorderThickness="0,0,0,2" Height="30" 
+					<TextBox x:Name="txtAddUser" FontSize="15" FontWeight="SemiBold" FontFamily="Montserrat" Foreground="White" CaretBrush="White" BorderBrush="White" BorderThickness="0,0,0,2" Height="22" 
 							 VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
 					</TextBox>
 					<TextBlock Text="Password" Foreground="White" FontSize="15" FontWeight="SemiBold" FontFamily="Montserrat" Margin="0,15,0,0"/>
-					<TextBox x:Name="txtAddPass" Watermark="Password Box" UseFloatingWatermark="True" PasswordChar="*" Text="Password" FontSize="15" FontWeight="SemiBold" 
-							 FontFamily="Montserrat" Foreground="White" CaretBrush="White" BorderBrush="White" BorderThickness="0,0,0,2" Height="30" 
+					<TextBox x:Name="txtAddPass" FontSize="15" FontWeight="SemiBold" 
+							 FontFamily="Montserrat" Foreground="White" CaretBrush="White" BorderBrush="White" BorderThickness="0,0,0,2" Height="22" 
 							 VerticalContentAlignment="Center" Margin="0,5,0,0" Padding="20,0,0,0">
 					</TextBox>
 					<StackPanel Margin="0,20,0,0" Orientation="Vertical">
+						<TextBlock Text="User Permission Level"
+								   Foreground="Wheat"
+								   FontSize="15.5"
+								   FontWeight="SemiBold"
+								   FontFamily="Montserrat"
+								   Margin="0,5,0,0"/>
 						<RadioButton Content="Admin" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0,5,0,0"/>
 						<RadioButton Content="Engineer" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0,5,0,0"/>
 						<RadioButton Content="Technician" FontSize="15" FontWeight="SemiBold" Foreground="White" Margin="0,5,0,0"/>
@@ -36,15 +42,6 @@
 
 					<Button x:Name="btnAddUser" Content="Add User" FontWeight="SemiBold" Foreground="White" FontSize="15"
                             FontFamily="Montserrat" Cursor="Hand" Margin="0,20,0,0">
-						<Button.Styles>
-						</Button.Styles>
-						<Button.Template>
-							<ControlTemplate TargetType="Button">
-								<Border Width="150" Height="40" CornerRadius="20" Background="#338DF0">
-									<ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
-								</Border>
-							</ControlTemplate>
-						</Button.Template>
 					</Button>
 				</StackPanel>
 			</Border>

@@ -6,7 +6,7 @@
 			 xmlns:components="clr-namespace:Mac_project.Views.System.Users;assembly=Mac_project"
              x:Class="Mac_project.Views.System.Users.mainUsers">
 
-	<StackPanel Margin="16, 20">
+	<StackPanel Margin="16, 20" VerticalAlignment="Center" HorizontalAlignment="Center">
 		<WrapPanel >
 			<StackPanel Orientation="Vertical"
 						VerticalAlignment="Center">
@@ -17,6 +17,7 @@
 					</Grid.ColumnDefinitions>
 
 					<components:addUsers Grid.Column="0" Grid.Row="0"/>
+					<components:usersData Grid.Column="2" Grid.Row="0" Margin="0 0" />
 				</Grid>
 			</StackPanel>
 		</WrapPanel>
