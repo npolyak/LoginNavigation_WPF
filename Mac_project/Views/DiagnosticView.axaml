@@ -10,6 +10,14 @@
 	<Design.DataContext>
 		<vm:MainWindowViewModel/>
 	</Design.DataContext>
+
+	<Grid RowDefinitions="Auto, *" Margin="5">
+		<TextBlock Grid.Row="0" Classes="Headline6" Text="Diagnostic"/>
+
+		<Border Grid.Row="1">
+			<diagnostic:DiagnosticData/>
+		</Border>
+	</Grid>
 	
-	<diagnostic:DiagnosticData/>
+
 </UserControl>

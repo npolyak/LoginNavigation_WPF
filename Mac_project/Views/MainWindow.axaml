@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:styles="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-        mc:Ignorable="d" d:DesignWidth="1150" d:DesignHeight="800"
+        mc:Ignorable="d" d:DesignWidth="1150" d:DesignHeight="770"
         x:Class="Mac_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Mac_project" Width="1135" Height="800">
+        Title="Mac_project" Width="1135" Height="770">
 
 	<Design.DataContext>
 		<vm:MainWindowViewModel/>

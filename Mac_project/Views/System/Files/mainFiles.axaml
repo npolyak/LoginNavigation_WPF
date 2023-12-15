@@ -3,6 +3,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:components="clr-namespace:Mac_project.Views.System.Files;assembly=Mac_project"
              x:Class="Mac_project.Views.System.Files.mainFiles">
-  Welcome to Avalonia!
+
+	<StackPanel Margin="16, 20" VerticalAlignment="Center" HorizontalAlignment="Center">
+		<WrapPanel >
+			<StackPanel Orientation="Vertical"
+						VerticalAlignment="Center">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+				</Grid>
+			</StackPanel>
+		</WrapPanel>
+	</StackPanel>
+	
 </UserControl>

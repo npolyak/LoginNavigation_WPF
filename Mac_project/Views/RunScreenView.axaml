@@ -6,5 +6,14 @@
 	mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="680"
 	x:Class="Mac_project.Views.RunScreenView"
 	xmlns:runScreen="clr-namespace:Mac_project.Views.RunScreen;assembly=Mac_project">
-	<runScreen:main />
+
+	<Grid RowDefinitions="Auto, *" Margin="5">
+		<TextBlock Grid.Row="0" Classes="Headline6" Text="Run Screen"/>
+
+		<Border Grid.Row="1">
+			<runScreen:main />
+		</Border>
+	</Grid>
+	
+	
 </UserControl>

@@ -3,53 +3,58 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
-			 xmlns:vm="using:Mac_project.ViewModels"
-			 xmlns:module="clr-namespace:Mac_project.Views.Module;assembly=Mac_project"
-			 xmlns:moduleOM="clr-namespace:Mac_project.Views.Module.MO;assembly=Mac_project"
-			 xmlns:moduleOVEN="clr-namespace:Mac_project.Views.Module.OVEN;assembly=Mac_project"
+             xmlns:vm="using:Mac_project.ViewModels"
+             xmlns:module="clr-namespace:Mac_project.Views.Module;assembly=Mac_project"
+             xmlns:moduleOM="clr-namespace:Mac_project.Views.Module.MO;assembly=Mac_project"
+             xmlns:moduleOVEN="clr-namespace:Mac_project.Views.Module.OVEN;assembly=Mac_project"
              x:Class="Mac_project.Views.ModuleView">
 
-	<StackPanel>
-		<Grid RowDefinitions="Auto, *" Margin="5">
-			<TextBlock Grid.Row="0" Classes="Headline6" Text="Module"/>
+	<ScrollViewer>
+		<StackPanel>
+			<Grid RowDefinitions="Auto, *" Margin="5">
+				<TextBlock Grid.Row="0" Classes="Headline6" Text="Module"/>
 
-			<Border Grid.Row="1" Margin="5">
-				<StackPanel>
-					<StackPanel.Styles>
-						<Style Selector="WrapPanel#ItemsPanel > DockPanel">
-							<Setter Property="Width" Value="500"/>
-							<Setter Property="Height" Value="400"/>
-							<Setter Property="Margin" Value="8"/>
-						</Style>
-						<Style Selector="TextBlock.Centered">
-							<Setter Property="HorizontalAlignment" Value="Center"/>
-							<Setter Property="VerticalAlignment" Value="Center"/>
-						</Style>
-						<Style Selector="DockPanel > TextBlock, DockPanel > TabControl">
-							<Setter Property="DockPanel.Dock" Value="Top"/>
-						</Style>
-					</StackPanel.Styles>
+				<Border Grid.Row="1" Margin="5">
+					<StackPanel>
+						<StackPanel.Styles>
+							<Style Selector="WrapPanel#ItemsPanel > DockPanel">
+								<Setter Property="Width" Value="500"/>
+								<Setter Property="Height" Value="400"/>
+								<Setter Property="Margin" Value="8"/>
+							</Style>
+							<Style Selector="TextBlock.Centered">
+								<Setter Property="HorizontalAlignment" Value="Center"/>
+								<Setter Property="VerticalAlignment" Value="Center"/>
+							</Style>
+							<Style Selector="DockPanel > TextBlock, DockPanel > TabControl">
+								<Setter Property="DockPanel.Dock" Value="Top"/>
+							</Style>
+						</StackPanel.Styles>
 
-					<!-- Module Menu - Tab Control-->
-					<DockPanel>
+						<!-- Module Menu - Tab Control-->
 						<TabControl>
 							<TabControl.Items>
 								<TabItem Header="MF-CL-AMS-OVI" Foreground="White" FontSize="16">
-									<module:MainFrameClipReelOVI/>
+									<ScrollViewer>
+										<module:MainFrameClipReelOVI/>
+									</ScrollViewer>
 								</TabItem>
 								<TabItem Header="OVEN" Foreground="White" FontSize="16">
-									<moduleOVEN:main/>
+									<ScrollViewer>
+										<moduleOVEN:main/>
+									</ScrollViewer>
 								</TabItem>
 								<TabItem Header="MO" Foreground="White" FontSize="16">
-									<moduleOM:main/>
+									<ScrollViewer>
+										<moduleOM:main/>
+									</ScrollViewer>
 								</TabItem>
 							</TabControl.Items>
 						</TabControl>
-					</DockPanel>
-				</StackPanel>
-			</Border>
-		</Grid>
-	</StackPanel>
-			 
-	
+					</StackPanel>
+				</Border>
+			</Grid>
+		</StackPanel>
+	</ScrollViewer>
+
 </UserControl>

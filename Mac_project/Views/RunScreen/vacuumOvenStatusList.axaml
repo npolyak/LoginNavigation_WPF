@@ -9,26 +9,54 @@
              x:DataType="vm:RunScreenViewModel"
              x:Class="Mac_project.Views.RunScreen.vacuumOvenStatusList">
 
-  <controls:Card>
-    <ItemsControl
-      Height="200"
-      ItemsSource="{Binding vacuumOvenStatus}">
+	<controls:Card>
+		<StackPanel Orientation="Vertical" Margin="10, 5">
+			<TextBlock Classes="Headline6" Text="State Status" />
+			<ItemsControl
+			  Height="200"
+			  ItemsSource="{Binding vacuumOvenStatus}">
 
-      <ItemsControl.ItemsPanel>
-        <ItemsPanelTemplate>
-          <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10, 0" MaxWidth="700" />
-        </ItemsPanelTemplate>
-      </ItemsControl.ItemsPanel>
-      <ItemsControl.ItemTemplate>
-        <DataTemplate>
-          <Button
-            Margin="5"
-            Width="150"
-            Content="{Binding Name}"
-          />
-        </DataTemplate>
-      </ItemsControl.ItemTemplate>
-    </ItemsControl>
-  </controls:Card>
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel
+						  Orientation="Vertical"
+						  VerticalAlignment="Center"
+						  HorizontalAlignment="Left"
+						  MaxWidth="700" />
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Button
+						  Margin="5"
+						  Width="150"
+						  Content="{Binding Name}"
+						  Classes.isCheck="{Binding isCheckAndReady}"
+						  Classes.isDisable="{Binding isDisable}"
+						  Classes.isFailed="{Binding isFailed}"
+            >
+							<Button.Styles>
+								<Style Selector="Button.isCheck">
+									<Style.Setters>
+										<Setter Property="Background" Value="Green"/>
+									</Style.Setters>
+								</Style>
+								<Style Selector="Button.isDisable">
+									<Style.Setters>
+										<Setter Property="Background" Value="Yellow"/>
+										<Setter Property="Foreground" Value="Black"/>
+									</Style.Setters>
+								</Style>
+								<Style Selector="Button.isFailed">
+									<Style.Setters>
+										<Setter Property="Background" Value="Red"/>
+									</Style.Setters>
+								</Style>
+							</Button.Styles>
+						</Button>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</controls:Card>
 </UserControl>
-
