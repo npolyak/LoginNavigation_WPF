@@ -20,8 +20,7 @@
 				<ComboBox
 				  Width="150"
 				  SelectedIndex="0"
-				  VerticalContentAlignment="Bottom"
-            >
+				  VerticalContentAlignment="Bottom">
 					<TextBlock Text="Production Mode" VerticalAlignment="Bottom" />
 					<TextBlock Text="QA Mode" />
 					<TextBlock Text="Test Mode" />
@@ -29,7 +28,6 @@
 			</StackPanel>
 
 			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,20" />
-
 			<TextBlock Classes="Headline6" Text="Running Status" />
 
 			<StackPanel Orientation="Horizontal">

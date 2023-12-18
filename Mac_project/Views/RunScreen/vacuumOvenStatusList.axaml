@@ -33,8 +33,7 @@
 						  Content="{Binding Name}"
 						  Classes.isCheck="{Binding isCheckAndReady}"
 						  Classes.isDisable="{Binding isDisable}"
-						  Classes.isFailed="{Binding isFailed}"
-            >
+						  Classes.isFailed="{Binding isFailed}">
 							<Button.Styles>
 								<Style Selector="Button.isCheck">
 									<Style.Setters>

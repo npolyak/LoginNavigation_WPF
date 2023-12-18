@@ -16,38 +16,16 @@
 
 				<Border Grid.Row="1" Margin="5">
 					<StackPanel>
-						<StackPanel.Styles>
-							<Style Selector="WrapPanel#ItemsPanel > DockPanel">
-								<Setter Property="Width" Value="500"/>
-								<Setter Property="Height" Value="400"/>
-								<Setter Property="Margin" Value="8"/>
-							</Style>
-							<Style Selector="TextBlock.Centered">
-								<Setter Property="HorizontalAlignment" Value="Center"/>
-								<Setter Property="VerticalAlignment" Value="Center"/>
-							</Style>
-							<Style Selector="DockPanel > TextBlock, DockPanel > TabControl">
-								<Setter Property="DockPanel.Dock" Value="Top"/>
-							</Style>
-						</StackPanel.Styles>
-
-						<!-- Module Menu - Tab Control-->
 						<TabControl>
 							<TabControl.Items>
 								<TabItem Header="MF-CL-AMS-OVI" Foreground="White" FontSize="16">
-									<ScrollViewer>
-										<module:MainFrameClipReelOVI/>
-									</ScrollViewer>
+									<module:MainFrameClipReelOVI/>
 								</TabItem>
 								<TabItem Header="OVEN" Foreground="White" FontSize="16">
-									<ScrollViewer>
-										<moduleOVEN:main/>
-									</ScrollViewer>
+									<moduleOVEN:main/>
 								</TabItem>
 								<TabItem Header="MO" Foreground="White" FontSize="16">
-									<ScrollViewer>
-										<moduleOM:main/>
-									</ScrollViewer>
+									<moduleOM:main/>
 								</TabItem>
 							</TabControl.Items>
 						</TabControl>
@@ -56,5 +34,4 @@
 			</Grid>
 		</StackPanel>
 	</ScrollViewer>
-
 </UserControl>

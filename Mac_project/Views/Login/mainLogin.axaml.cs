@@ -2,11 +2,11 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Mac_project.Views.Dashboard;
+namespace Mac_project.Views.Login;
 
-public partial class Dashboard : UserControl
+public partial class mainLogin : UserControl
 {
-    public Dashboard()
+    public mainLogin()
     {
         InitializeComponent();
     }

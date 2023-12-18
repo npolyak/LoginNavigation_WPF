@@ -42,7 +42,6 @@
 					</StackPanel>
 				</StackPanel>
 			</StackPanel>
-
 		</StackPanel>
 	</controls:Card>
 </UserControl>

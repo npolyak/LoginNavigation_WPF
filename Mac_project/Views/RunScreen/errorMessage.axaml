@@ -23,8 +23,7 @@
 				  TextWrapping="Wrap"
 				  IsReadOnly="True"
 				  LineHeight="20"
-				  Text="{Binding errorMessages}"
-        />
+				  Text="{Binding errorMessages}"/>
 			</ScrollViewer>
 		</StackPanel>
 	</controls:Card>
