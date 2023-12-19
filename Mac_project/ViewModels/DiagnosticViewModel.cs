@@ -23,7 +23,7 @@ namespace Mac_project.ViewModels
                 new Input_Output("Mayra", "Jarquin", "1110", true),
                 new Input_Output("Lionel", "Messi", "1101", true),
                 new Input_Output("Carles", "Puyol", "9001", true),
-                new Input_Output("Ronaldinho", "9999", "Technician", true),
+                new Input_Output("Ronaldinho", "Gaucho", "9999", true),
                 new Input_Output("Neymar", "Jr", "9990", true),
             };
             IOMotors = new ObservableCollection<Input_Output>(iomotors);

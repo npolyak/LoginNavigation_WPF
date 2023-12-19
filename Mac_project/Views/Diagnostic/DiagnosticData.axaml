@@ -13,17 +13,11 @@
 		<vm:DiagnosticViewModel/>
 	</Design.DataContext>
 
-
-
 	<StackPanel Orientation="Vertical">
 		<!-- Search Box -->
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 15 10">
 			<TextBox Width="130" Watermark="Search IO" x:Name="numericWatermark"/>
 		</StackPanel>
-		
-		<StackPanel.Resources>
-
-		</StackPanel.Resources>
 		
 		<!-- DataGrid -->
 		<DataGrid Margin="15 10 15 0"
@@ -33,12 +27,11 @@
 				  BorderThickness="1"
 				  BorderBrush="Gray"
 				  CanUserSortColumns="True">
-
 			<DataGrid.Columns>
-				<DataGridTextColumn Header="ModuleName"  Binding="{Binding ModuleName}"/>
-				<DataGridTextColumn Header="Name" Binding="{Binding Name}" />
-				<DataGridTextColumn Header="Address" Binding="{Binding Address}" />
-				<DataGridCheckBoxColumn Header="Status" Binding="{Binding Status}" />
+				<DataGridTextColumn Header="ModuleName"  Binding="{Binding ModuleName}" Width="2*"/>
+				<DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="2*"/>
+				<DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="2*"/>
+				<DataGridCheckBoxColumn Header="Status" Binding="{Binding Status}" Width="*"/>
 			</DataGrid.Columns>
 		</DataGrid>
 	</StackPanel>

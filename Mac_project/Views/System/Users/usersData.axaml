@@ -5,15 +5,21 @@
              mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
              xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+			 xmlns:vm="using:Mac_project.ViewModels"
+			 x:DataType="vm:FileVM"
              x:Class="Mac_project.Views.System.Users.usersData">
 
+	<Design.DataContext>
+		<vm:FileVM/>
+	</Design.DataContext>
+	
 	<controls:Card Margin="10 5">
 		<StackPanel Orientation="Vertical" Margin="10,5">
-			<DataGrid x:Name="dataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+			<DataGrid x:Name="dataGrid" ItemsSource="{Binding FileUserDisplay}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 				<DataGrid.Columns>
-					<DataGridTextColumn Header="Username" />
-					<DataGridTextColumn Header="Role" />
-					<DataGridTextColumn Header="Actions"  />
+					<DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="2*"/>
+					<DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="2*"/>
+					<DataGridTextColumn Header="Actions" Binding="{Binding Action}" Width="*"/>
 				</DataGrid.Columns>
 			</DataGrid>
 		</StackPanel>
