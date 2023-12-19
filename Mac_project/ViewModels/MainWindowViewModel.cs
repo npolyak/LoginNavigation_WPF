@@ -38,32 +38,6 @@ public partial class MainWindowViewModel : ViewModelBase
         new ListItemTemplate(typeof(DiagnosticViewModel), "diagnostic", "Diagnostic"),
     };
 
-
-    /// <summary>
-    /// ////////////////////////////////////////////////////////
-    /// </summary>
-    //Input, Outputs and Motors List
-    public ObservableCollection<Input_Output> IOMotors { get; }
-
-    public MainWindowViewModel()
-    {
-        var iomotors = new List<Input_Output>
-            {
-                new Input_Output("Neil", "Armstrong", "Test", false),
-                new Input_Output("Buzz", "Lightyear", "Test", true),
-                new Input_Output("James", "Kirk", "Test", true),
-                new Input_Output("Carlos", "Jarquin", "Test", true),
-                new Input_Output("Kerling", "Washington", "Test", true),
-                new Input_Output("Claire", "Darce", "Test", true),
-                new Input_Output("Regina", "Support", "Test", true),
-                new Input_Output("Mayra", "Jarquin", "Test", true)
-            };
-        IOMotors = new ObservableCollection<Input_Output>(iomotors);
-    }
-    /// <summary>
-    /// ////////////////////////////////////////////////////////
-    /// </summary>
-
     [RelayCommand]
     private void TriggerPane()
     {

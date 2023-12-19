@@ -169,6 +169,15 @@
 							<TextBox.Background>
 								<ImageBrush Source="/Assets/user-icon.png" Stretch="None" AlignmentX="Left"/>
 							</TextBox.Background>
+
+							<TextBox.Styles>
+								<Style Selector="TextBox">
+									<Setter Property="Background" Value="Wheat"/>
+									<Style Selector="^:pointerover">
+										<Setter Property="Background" Value="#DA34AE"/>
+									</Style>
+								</Style>
+							</TextBox.Styles>
 						</TextBox>
 
 						<TextBlock Text="Password"
@@ -194,6 +203,15 @@
 							<TextBox.Background>
 								<ImageBrush Source="/Assets/key-icon.png" Stretch="None" AlignmentX="Left"/>
 							</TextBox.Background>
+
+							<TextBox.Styles>
+								<Style Selector="TextBox">
+									<Setter Property="Background" Value="Wheat"/>
+									<Style Selector="^:pointerover">
+										<Setter Property="Background" Value="#DA34AE"/>
+									</Style>
+								</Style>
+							</TextBox.Styles>
 						</TextBox>
 
 						<!-- Error Message -->
