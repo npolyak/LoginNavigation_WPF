@@ -45,4 +45,7 @@
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\System\Files\fileParameters.axaml" />
   </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\RunScreen\Parameters.axaml" />
+  </ItemGroup>
 </Project>

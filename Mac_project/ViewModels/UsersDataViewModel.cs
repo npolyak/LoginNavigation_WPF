@@ -4,11 +4,11 @@ using System.Collections.ObjectModel;
 
 namespace Mac_project.ViewModels
 {
-    public class FileVM : ViewModelBase
+    public class UsersDataViewModel : ViewModelBase
     {
         public ObservableCollection<displayUsers> FileUserDisplay { get; }
 
-        public FileVM()
+        public UsersDataViewModel()
         {
             var userdisplay = new List<displayUsers>
             {

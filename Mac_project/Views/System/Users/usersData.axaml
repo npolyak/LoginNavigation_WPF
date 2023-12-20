@@ -2,26 +2,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="500"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
              xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
 			 xmlns:vm="using:Mac_project.ViewModels"
-			 x:DataType="vm:FileVM"
+			 x:DataType="vm:UsersDataViewModel"
              x:Class="Mac_project.Views.System.Users.usersData">
 
 	<Design.DataContext>
-		<vm:FileVM/>
+		<vm:UsersDataViewModel/>
 	</Design.DataContext>
-	
+
 	<controls:Card Margin="10 5">
-		<StackPanel Orientation="Vertical" Margin="10,5">
-			<DataGrid x:Name="dataGrid" ItemsSource="{Binding FileUserDisplay}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+		<StackPanel Orientation="Vertical" Width="500">
+			<!-- DataGrid -->
+			<DataGrid Margin="15 10 15 0"
+					  ItemsSource="{Binding FileUserDisplay}"
+					  GridLinesVisibility="All"
+					  IsReadOnly="True"
+					  BorderThickness="1"
+					  BorderBrush="Gray"
+					  CanUserSortColumns="True">
 				<DataGrid.Columns>
-					<DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="2*"/>
+					<DataGridTextColumn Header="Username"  Binding="{Binding Username}" Width="2*"/>
 					<DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="2*"/>
-					<DataGridTextColumn Header="Actions" Binding="{Binding Action}" Width="*"/>
+					<DataGridTextColumn Header="Action" Binding="{Binding Action}" Width="*"/>
 				</DataGrid.Columns>
 			</DataGrid>
 		</StackPanel>
 	</controls:Card>
+	
 </UserControl>
