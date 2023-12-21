@@ -18,9 +18,4 @@ public partial class Parameters : UserControl
         var window = this.Parent as Window;
         window.Close();
     }
-
-    internal void ShowDialog()
-    {
-        throw new NotImplementedException();
-    }
 }
