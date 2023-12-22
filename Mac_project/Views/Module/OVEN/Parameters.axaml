@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="550"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
 			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
              x:Class="Mac_project.Views.Module.OVEN.Parameters">
@@ -14,101 +14,137 @@
 				</Style>
 			</StackPanel.Styles>
 
-			<StackPanel Height="1" Background="Gray" Opacity="0.1" Margin="0,0,0,5" />
-			<TextBlock Classes="Headline6" Text="OVEN" Margin="0,0,0,5"/>
+			<TextBlock Classes="Subtitle1" Text="Parameters" FontWeight="Medium"/>
+			
 
-			<!-- Execute Buttons-->
-			<StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 0 0 10 ">
-				<StackPanel Orientation="Vertical">
-					<Button Content="Initialize" Background="#338DF0" Width="100" />
-				</StackPanel>
-				<StackPanel Orientation="Vertical">
-					<Button Content="Load" Margin="5,0,0,0" Background="Gray" Width="100" />
-				</StackPanel>
-				<StackPanel Orientation="Vertical" >
-					<Button Content="Save" Margin="5,0,0,0" Background="Gray" Width="100" />
-				</StackPanel>
-			</StackPanel>
-
-			<!-- Status-->
+			<!-- Columns and Rows -->
 			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
 				<StackPanel Orientation="Vertical">
 					<Grid>
 						<Grid.ColumnDefinitions>
-							<ColumnDefinition Width="Auto"/>
-							<ColumnDefinition Width="Auto"/>
-							<ColumnDefinition Width="Auto"/>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
+							<ColumnDefinition/>
 						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
 
-						<!-- First Column-->
-						<StackPanel Grid.Column="0" Orientation="Vertical">
-							<TextBlock Classes="Subtitle1" Text="Positions" FontWeight="Medium"/>
-							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Load: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+						<!-- 1 Column, 1 Row -->
+						<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0" Margin="0 10">
+							<StackPanel Orientation="Vertical">
+								<TextBlock Classes="Subtitle1" Text="Front Transfer Positions" FontWeight="Medium"/>
+								<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Up:" VerticalAlignment="Center" Margin="10 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Down:" VerticalAlignment="Center" Margin="2 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Front:" VerticalAlignment="Center" />
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Rear:" VerticalAlignment="Center" Margin="5 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
 							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Offset: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
-								<Button Content="Load" Background="Gray" Width="90" Margin="0 0 10 10"/>
-								<Button Content="Offset" Background="Gray" Width="90" Margin="0 0 10 10"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Unload: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Offset: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
-								<Button Content="Unload" Background="Gray" Width="90" Margin="0 0 10 10"/>
-								<Button Content="Offset" Background="Gray" Width="90" Margin="0 0 10 10"/>
+
+							<StackPanel Orientation="Vertical" Margin="20 0">
+								<TextBlock Classes="Subtitle1" Text="GoTo - Actions" FontWeight="Medium"/>
+								<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+									<Button Content="Up" Background="Gray" Width="80" Margin="0 0 10 10"/>
+									<Button Content="Down" Background="Gray" Width="80" Margin="0 0 10 10"/>
+								</StackPanel>
+								<StackPanel Orientation="Vertical" Margin="0 10 0 0">
+									<Button Content="Front" Background="Gray" Width="110" Margin="0 0 10 10"/>
+									<Button Content="Rear" Background="Gray" Width="110" Margin="0 0 10 10"/>
+									<Button Content="Rear Speed" Background="Gray" Width="110" Margin="0 0 10 10"/>
+								</StackPanel>
 							</StackPanel>
 						</StackPanel>
 
-						<!-- Second Column-->
-						<StackPanel Grid.Column="1" Orientation="Vertical" Margin="10 18 0 0">
-							<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="First: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+						<!-- 1 Column, 2 Row -->
+						<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1" Margin="0 15">
+							<StackPanel Grid.Column="0" Orientation="Vertical">
+								<TextBlock Classes="Subtitle1" Text="Rear Transfer Positions" FontWeight="Medium"/>
+								<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Up:" VerticalAlignment="Center" Margin="10 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Down:" VerticalAlignment="Center" Margin="2 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Front:" VerticalAlignment="Center" />
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Rear:" VerticalAlignment="Center" Margin="5 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
 							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Last: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
-								<Button Content="First" Background="Gray" Width="90" Margin="0 0 10 10"/>
-								<Button Content="Last" Background="Gray" Width="90" Margin="0 0 10 10"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Pusher Back: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Pusher Push: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
-								<TextBlock Classes="body1" Text="Pusher Wait: " VerticalAlignment="Center" />
-								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="4 0 0 0"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
-								<Button Content="Home" Background="Gray" Width="90" Margin="0 0 10 10"/>
-								<Button Content="Out" Background="Gray" Width="90" Margin="0 0 10 10"/>
-							</StackPanel>
-							<StackPanel Orientation="Vertical" Margin="0 10 0 0" HorizontalAlignment="Center">
-								<Button Content="Wait" Background="Gray" Width="90" Margin="0 0 10 10"/>
+
+							<StackPanel Grid.Column="0" Orientation="Vertical" Margin="22 0">
+								<TextBlock Classes="Subtitle1" Text="GoTo - Actions" FontWeight="Medium"/>
+								<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+									<Button Content="Up" Background="Gray" Width="80" Margin="0 0 10 10"/>
+									<Button Content="Down" Background="Gray" Width="80" Margin="0 0 10 10"/>
+								</StackPanel>
+								<StackPanel Orientation="Vertical" Margin="0 10 0 0">
+									<Button Content="Front" Background="Gray" Width="110" Margin="0 0 10 10"/>
+									<Button Content="Rear" Background="Gray" Width="110" Margin="0 0 10 10"/>
+									<Button Content="Rear Speed" Background="Gray" Width="110" Margin="0 0 10 10"/>
+								</StackPanel>
 							</StackPanel>
 						</StackPanel>
-						<!-- Third Column-->
 
+						<!-- 2 Column, 1 Row -->
+						<StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+							<StackPanel Grid.Column="0" Orientation="Vertical">
+								<TextBlock Classes="Subtitle1" Text="Chamber Positions" FontWeight="Medium"/>
+								<StackPanel Orientation="Horizontal"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Up:" VerticalAlignment="Center" Margin="10 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Down:" VerticalAlignment="Center" Margin="2 0"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
 
-						<StackPanel Grid.Column="2" Orientation="Vertical" Margin="10 15 0 0">
-
+								<StackPanel Orientation="Vertical" Margin="0 15">
+									<TextBlock Classes="Subtitle1" Text="GoTo - Actions" FontWeight="Medium"/>
+									<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+										<Button Content="Up" Background="Gray" Width="80" Margin="0 0 10 10"/>
+										<Button Content="Down" Background="Gray" Width="80" Margin="0 0 10 10"/>
+									</StackPanel>
+								</StackPanel>
+							</StackPanel>
 						</StackPanel>
+
+						<!-- 2 Column, 2 Row -->
+						<StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="0 15">
+							<StackPanel Grid.Column="0" Orientation="Vertical">
+								<TextBlock Classes="Subtitle1" Text="O2 Control" FontWeight="Medium"/>
+								<StackPanel Orientation="Vertical"  Margin="0,15,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="Delay After Power On:" VerticalAlignment="Center"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+								</StackPanel>
+								<StackPanel Orientation="Vertical"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="O2 Measure Time:" VerticalAlignment="Center"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
+								<StackPanel Orientation="Vertical"  Margin="0,10,0,0" VerticalAlignment="Center">
+									<TextBlock Classes="body1" Text="O2 Alarm PPM:" VerticalAlignment="Center"/>
+									<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35"/>
+								</StackPanel>
+							</StackPanel>
+						</StackPanel>
+						
 					</Grid>
 				</StackPanel>
 			</StackPanel>

@@ -7,7 +7,7 @@
         mc:Ignorable="d" d:DesignWidth="1150" d:DesignHeight="770"
         x:Class="Mac_project.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-		SystemDecorations="BorderOnly"
+		SystemDecorations="Full"
 		WindowStartupLocation="CenterScreen"
         Icon="/Assets/avalonia-logo.ico"
         Title="Mac_project" Width="1135" Height="770">
