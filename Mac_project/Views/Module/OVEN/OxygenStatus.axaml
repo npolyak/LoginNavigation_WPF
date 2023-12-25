@@ -1,0 +1,67 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
+			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             x:Class="Mac_project.Views.Module.OVEN.OxygenStatus">
+
+	<controls:Card>
+		<StackPanel Orientation="Vertical" Margin="10, 5">
+			<StackPanel.Styles>
+				<Style Selector="StackPanel > TextBlock">
+					<Setter Property="VerticalAlignment" Value="Bottom" />
+				</Style>
+			</StackPanel.Styles>
+
+			<!-- Status-->
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+				<StackPanel Orientation="Vertical">
+
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<!-- Action Section -->
+						<StackPanel Grid.Row="0" Orientation="Vertical">
+							<TextBlock Classes="Subtitle1" Text="Oxygen Status" FontWeight="Medium"/>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<CheckBox IsChecked="False"> O2 Alarm 1</CheckBox>
+								<CheckBox IsChecked="False"> O2 Fault</CheckBox>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="Detect1" Background="Red" Foreground="White" Width="90" Margin="0 0 10 10"/>
+								<Button Content="Detect2" Background="Red" Foreground="White" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+								<Button Content="Detect3" Background="Red" Foreground="White" Width="90" Margin="0 0 10 10"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+								<TextBlock Classes="Subtitle1" Text="O2 Value" FontWeight="Medium" Margin="10 0"/>
+								<Label Content="" Background="Gray" Width="90"></Label>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+								<Button Content="O2 Measure" Background="Gray" Width="115" Margin="0 0 10 10"/>							</StackPanel>
+						</StackPanel>
+
+						<!-- Lead Frame Pusher Section -->
+						<StackPanel Grid.Row="1" Orientation="Vertical" Margin="0 10 0 0">
+							<TextBlock Classes="Subtitle1" Text="Chamber Heat Block Control" FontWeight="Medium"/>
+							<StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+								<CheckBox IsChecked="True">Use or Not</CheckBox>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Chamber Region" VerticalAlignment="Center" />
+								<NumericUpDown Value="0.01" Increment="0.01" FormatString="0.00" Minimum="0" Maximum="1" Width="100" Height="35" Margin="6 0 0 0"/>
+							</StackPanel>
+						</StackPanel>
+					</Grid>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+	</controls:Card>
+	
+</UserControl>

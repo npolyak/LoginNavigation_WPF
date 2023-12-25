@@ -162,19 +162,18 @@
 								 CaretBrush="White"
 								 BorderBrush="White"
 								 BorderThickness="0 0 0 2"
-								 Height="30"
+								 Height="25"
 								 VerticalAlignment="Center"
 								 Margin="0 5 0 0"
 								 Padding="20 0 0 0">
-							<TextBox.Background>
+							<!--							<TextBox.Background>
 								<ImageBrush Source="/Assets/user-icon.png" Stretch="None" AlignmentX="Left"/>
-							</TextBox.Background>
-
+							</TextBox.Background>-->
 							<TextBox.Styles>
 								<Style Selector="TextBox">
-									<Setter Property="Background" Value="Wheat"/>
+									<Setter Property="Background" Value="#060531"/>
 									<Style Selector="^:pointerover">
-										<Setter Property="Background" Value="#DA34AE"/>
+										<Setter Property="Background" Value="#060531"/>
 									</Style>
 								</Style>
 							</TextBox.Styles>
@@ -194,21 +193,20 @@
 								 CaretBrush="White"
 								 BorderBrush="White"
 								 BorderThickness="0 0 0 2"
-								 Height="30"
+								 Height="25"
 								 VerticalAlignment="Center"
 								 Margin="0 5 0 0"
 								 Padding="20 0 0 0"
 								 PasswordChar="*"
 								 KeyDown="txtPass_KeyDown">
-							<TextBox.Background>
+							<!--							<TextBox.Background>
 								<ImageBrush Source="/Assets/key-icon.png" Stretch="None" AlignmentX="Left"/>
-							</TextBox.Background>
-
+							</TextBox.Background>-->
 							<TextBox.Styles>
 								<Style Selector="TextBox">
-									<Setter Property="Background" Value="Wheat"/>
+									<Setter Property="Background" Value="#060531"/>
 									<Style Selector="^:pointerover">
-										<Setter Property="Background" Value="#DA34AE"/>
+										<Setter Property="Background" Value="#060531"/>
 									</Style>
 								</Style>
 							</TextBox.Styles>
