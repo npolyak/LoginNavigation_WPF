@@ -2,103 +2,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="500"
 			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
 			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+			 xmlns:vm="using:Mac_project.ViewModels"
+			 xmlns:runscreenGHSECSGEM="clr-namespace:Mac_project.Views.RunScreen.MainGHSECSGEM;assembly=Mac_project"
              x:Class="Mac_project.Views.RunScreen.GHSECSGEM">
 
-	<controls:Card>
-		<StackPanel Orientation="Vertical" Margin="10 5">
 
-			<StackPanel.Styles>
-				<Style Selector="StackPanel > TextBlock">
-					<Setter Property="VerticalAlignment" Value="Bottom" />
-				</Style>
-			</StackPanel.Styles>
-			
-			<StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
-				<TextBlock Classes="Subtitle1" Text="Current Lot Statistics" FontWeight="Medium"/>
-				<Grid>
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition/>
-						<ColumnDefinition/>
-					</Grid.ColumnDefinitions>
+	<Grid RowDefinitions="Auto, *" Margin="5">
+		<TextBlock Grid.Row="0" Classes="Headline6" Text="GHSECSGEM"/>
 
-					<!-- First Column -->
-					<StackPanel Orientation="Vertical" Grid.Column="0" Background="Red">
-						<StackPanel Orientation="Vertical">
-							<StackPanel Orientation="Horizontal"  Margin="0 5">
-								<TextBlock Classes="body1" Text="Lot Start Time:" VerticalAlignment="Center"/>
-								<TextBox  Text="" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 5"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal">
-								<TextBlock Classes="body1" Text="Lot End Time:" VerticalAlignment="Center"/>
-								<TextBox  Text="" Foreground="Black" Background="White" Height="20" Width="80" Margin="17 5"/>
-							</StackPanel>
-						</StackPanel>
-
-						<StackPanel Orientation="Vertical" Margin="0 20">
-							<TextBlock Classes="body1" Text="Quantity" FontWeight="Medium"/>
-							<StackPanel Orientation="Horizontal"  Margin="0 5">
-								<TextBlock Classes="body1" Text="Process:" VerticalAlignment="Center"/>
-								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="15 5"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 5">
-								<TextBlock Classes="body1" Text="Rejected:" VerticalAlignment="Center"/>
-								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="11 5"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 5">
-								<TextBlock Classes="body1" Text="Strip ID:" VerticalAlignment="Center"/>
-								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="22 5"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 5">
-								<TextBlock Classes="body1" Text="Process Strips:" VerticalAlignment="Center"/>
-								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="13 5"/>
-							</StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 5">
-								<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
-								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 5"/>
-							</StackPanel>
-						</StackPanel>
-
-						<!-- Buttons -->
-						<StackPanel>
-							<StackPanel Orientation="Horizontal" Margin="0 5 0 0">
-								<Button Content="Reset Stats" Background="Gray" Width="120" Margin="0 0 10 10"/>
-								<Button Content="Check StripID" Width="120" Margin="0 0 10 10"/>
-							</StackPanel>
-						</StackPanel>
-					</StackPanel>
-
-					<!-- Second Column -->
-					<StackPanel Orientation="Vertical" Grid.Column="1" Margin="20 0">
-						<StackPanel Orientation="Horizontal">
-							<TextBlock Classes="body1" Text="Lot Status:" VerticalAlignment="Center"/>
-							<ComboBox Width="150"
-									  SelectedIndex="0"
-									  VerticalContentAlignment="Bottom"
-									  HorizontalAlignment="Left"
-									  Margin="10 0">
-								<TextBlock Text="Lot Start" VerticalAlignment="Bottom" />
-								<TextBlock Text="Lot Stop" />
-								<TextBlock Text="Test Mode" />
-							</ComboBox>
-						</StackPanel>
-
-						<StackPanel Orientation="Horizontal" Margin="0 5">
-							<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
-							<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 5"/>
-						</StackPanel>
-						<StackPanel Orientation="Horizontal">
-							<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
-							<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 0"/>
-						</StackPanel>
-						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10">
-							<Button Content="Update Lot Info" HorizontalAlignment="Center" />
-						</StackPanel>
-					</StackPanel>
-				</Grid>
+		<Border Grid.Row="1" Margin="5">
+			<StackPanel>
+				<TabControl>
+					<TabControl.Items>
+						<TabItem Header="Lot Management" Foreground="White" FontSize="16">
+							<runscreenGHSECSGEM:LotManagement/>
+						</TabItem>
+						<TabItem Header="SEC/GEM Config" Foreground="White" FontSize="16">
+							<TextBlock Classes="Centered" Text="Page 1"/>
+						</TabItem>
+						<TabItem Header="2D Configuration" Foreground="White" FontSize="16">
+							<runscreenGHSECSGEM:_2DConfiguration/>
+						</TabItem>
+						<TabItem Header="Stip Map Manage" Foreground="White" FontSize="16">
+							<TextBlock Classes="Centered" Text="Page 1"/>
+						</TabItem>
+					</TabControl.Items>
+				</TabControl>
 			</StackPanel>
-		</StackPanel>
-	</controls:Card>
+		</Border>
+	</Grid>
+	
 </UserControl>

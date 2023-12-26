@@ -1,0 +1,130 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="450"
+			 xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
+			 xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             x:Class="Mac_project.Views.RunScreen.MainGHSECSGEM.LotManagement">
+
+	<controls:Card>
+		<StackPanel Orientation="Vertical" Margin="10 5">
+
+			<StackPanel.Styles>
+				<Style Selector="StackPanel > TextBlock">
+					<Setter Property="VerticalAlignment" Value="Bottom" />
+				</Style>
+			</StackPanel.Styles>
+
+			<StackPanel Orientation="Vertical">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+
+					<!-- First Column -->
+					<StackPanel Orientation="Vertical" Grid.Column="0" Background="Plum">
+						<TextBlock Classes="Subtitle1" Text="Current Lot Statistics" FontWeight="Medium"/>
+						<StackPanel Orientation="Vertical">
+							<StackPanel Orientation="Horizontal"  Margin="0 5">
+								<TextBlock Classes="body1" Text="Lot Start Time:" VerticalAlignment="Center"/>
+								<TextBox  Text="" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 5"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Classes="body1" Text="Lot End Time:" VerticalAlignment="Center"/>
+								<TextBox  Text="" Foreground="Black" Background="White" Height="20" Width="80" Margin="17 5"/>
+							</StackPanel>
+						</StackPanel>
+
+						<StackPanel Orientation="Vertical" Margin="0 20">
+							<TextBlock Classes="body1" Text="Quantity" FontWeight="Medium"/>
+							<StackPanel Orientation="Horizontal"  Margin="0 5">
+								<TextBlock Classes="body1" Text="Process:" VerticalAlignment="Center"/>
+								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="15 5"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5">
+								<TextBlock Classes="body1" Text="Rejected:" VerticalAlignment="Center"/>
+								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="11 5"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5">
+								<TextBlock Classes="body1" Text="Strip ID:" VerticalAlignment="Center"/>
+								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="22 5"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5">
+								<TextBlock Classes="body1" Text="Process Strips:" VerticalAlignment="Center"/>
+								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="13 5"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal" Margin="0 5">
+								<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
+								<TextBox  Text="0" Foreground="Black" Background="White" Height="20" Width="80" Margin="10 5"/>
+							</StackPanel>
+						</StackPanel>
+
+					</StackPanel>
+
+					<!-- Second Column -->
+					<StackPanel Orientation="Vertical" Grid.Column="1" Background="Green" Margin="20 0">
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Classes="body1" Text="Lot Status:" VerticalAlignment="Center"/>
+							<ComboBox Width="150"
+									  SelectedIndex="0"
+									  VerticalContentAlignment="Bottom"
+									  HorizontalAlignment="Left"
+									  Margin="10 0">
+								<TextBlock Text="Lot Start" VerticalAlignment="Bottom" />
+								<TextBlock Text="Lot Stop" />
+								<TextBlock Text="Test Mode" />
+							</ComboBox>
+						</StackPanel>
+
+						<StackPanel Orientation="Horizontal" Margin="0 5">
+							<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
+							<TextBox  Text="0" Foreground="White" Height="20" Width="80" Margin="10 5"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
+							<TextBox  Text="0" Foreground="White" Height="20" Width="80" Margin="10 0"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10">
+							<Button Content="Update Info" HorizontalAlignment="Center" />
+						</StackPanel>
+
+						<StackPanel Orientation="Vertical">
+							<TextBlock Classes="body1" Text="Lot Control" FontWeight="Medium"/>
+							<StackPanel Orientation="Horizontal"  Margin="0 0">
+								<CheckBox IsChecked="False">Lot Size</CheckBox>
+								<CheckBox IsChecked="True" Margin="10 0">Lot Strip</CheckBox>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="LotSize:" VerticalAlignment="Center" Margin="10 0"/>
+								<NumericUpDown Value="0" Increment="0.1" FormatString="0.0" Minimum="-5" Maximum="10" Width="100" Height="35" Margin="25 0 0 0"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal"  Margin="0,10,0,0" VerticalAlignment="Center">
+								<TextBlock Classes="body1" Text="Total Strip:" VerticalAlignment="Center" Margin="10 0"/>
+								<NumericUpDown Value="0" Increment="0.1" FormatString="0.0" Minimum="0" Maximum="10" Width="100" Height="35" Margin="6 0 0 0"/>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Classes="body1" Text="Process MI:" VerticalAlignment="Center"/>
+								<TextBox  Text="360" Foreground="White" Height="20" Width="80" Margin="18 5"/>
+							</StackPanel>
+						</StackPanel>
+					</StackPanel>
+				</Grid>
+
+				<!-- Buttons -->
+				<StackPanel Orientation="Horizontal">
+					<StackPanel Orientation="Horizontal" Margin="10 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Center">
+						<Button Content="Reset Stats" Background="Gray" Width="120" Margin="20 0 10 10"/>
+						<Button Content="Check StripID" Width="120" Margin="20 0 10 10"/>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal" Margin="25 10 0 0">
+						<Button Content="Lot Start" Width="120" Margin="30 0 10 10"/>
+						<Button Content="Lot End" Width="120" Margin="20 0 10 10"/>
+					</StackPanel>
+				</StackPanel>
+
+			</StackPanel>
+		</StackPanel>
+	</controls:Card>
+</UserControl>
