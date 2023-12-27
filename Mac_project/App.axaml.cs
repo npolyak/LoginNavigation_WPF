@@ -17,31 +17,15 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            var loginWindow = new LoginView();
             var mainWindow = new MainWindow();
 
-            // Handle the AuthenticationSuccess event
-            loginWindow.AuthenticationSuccess += (sender, args) =>
-            {
-                // Set the DataContext of the MainWindow to a new instance of MainWindowViewModel
-                mainWindow.DataContext = new MainWindowViewModel();
+            mainWindow.DataContext = new MainWindowViewModel();
 
-                // Show the mainWindow
-                mainWindow.Show();
-
-                // Set the mainWindow as the desktop's MainWindow
-                desktop.MainWindow = mainWindow;
-
-                // Close the login window
-                loginWindow.Close();
-            };
+            // Show the mainWindow
+            mainWindow.Show();
 
             // Show the login window
-            desktop.MainWindow = loginWindow;
-            loginWindow.Show();
-
-            // Close the login window when the main window is closed
-            mainWindow.Closed += (sender, args) => loginWindow.Close();
+            desktop.MainWindow = mainWindow;
         }
 
         base.OnFrameworkInitializationCompleted();

@@ -1,4 +1,4 @@
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -8,12 +8,8 @@
         xmlns:login="clr-namespace:Mac_project.Views.Login;assembly=Mac_project"
 		xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
         xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-		WindowStartupLocation="CenterScreen"
-		SystemDecorations="None"
 		Background="Transparent"
-		TransparencyLevelHint="Transparent"
-        x:Class="Mac_project.Views.LoginView"
-        Title="LoginView">
+        x:Class="Mac_project.Views.LoginView">
 
 	<controls:Card Background="Transparent">
 		<Border CornerRadius="12">
@@ -59,68 +55,6 @@
 								   FontFamily="Montserrat"
 								   VerticalAlignment="Center"
 								   Margin="10,0,0,0"/>
-
-						<!-- Minimize Button -->
-						<Button x:Name="btnMinimize"
-								Grid.Column="1"
-								BorderThickness="0"
-								Content="-"
-								Foreground="White"
-								FontSize="16"
-								FontFamily="Montserrat"
-								Cursor="Hand"
-								Click="btnMinimize_Click">
-							<Button.Styles>
-								<Style Selector="Button">
-									<Setter Property="Background" Value="#28AEED"/>
-									<Style Selector="^:pointerover">
-										<Setter Property="Foreground" Value="White"/>
-										<Setter Property="Background" Value="#278BEF"/>
-									</Style>
-								</Style>
-							</Button.Styles>
-
-							<Button.Template>
-								<ControlTemplate>
-									<Border Background="{TemplateBinding Background}"
-											Width="18" Height="18" CornerRadius="9">
-										<ContentPresenter VerticalAlignment="Center"
-														  HorizontalAlignment="Center"/>
-									</Border>
-								</ControlTemplate>
-							</Button.Template>
-						</Button>
-
-						<!-- Close Button -->
-						<Button x:Name="btnClose"
-								Grid.Column="2"
-								BorderThickness="0"
-								Content="X"
-								Foreground="White"
-								FontSize="12"
-								FontFamily="Montserrat"
-								Cursor="Hand"
-								Click="btnClose_Click">
-							<Button.Styles>
-								<Style Selector="Button">
-									<Setter Property="Background" Value="#DA34AE"/>
-									<Style Selector="^:pointerover">
-										<Setter Property="Foreground" Value="White"/>
-										<Setter Property="Background" Value="#C62DAE"/>
-									</Style>
-								</Style>
-							</Button.Styles>
-
-							<Button.Template>
-								<ControlTemplate>
-									<Border Background="{TemplateBinding Background}"
-											Width="18" Height="18" CornerRadius="9">
-										<ContentPresenter VerticalAlignment="Center"
-														  HorizontalAlignment="Center"/>
-									</Border>
-								</ControlTemplate>
-							</Button.Template>
-						</Button>
 					</Grid>
 
 					<!-- Content -->
@@ -258,4 +192,4 @@
 		</Border>
 	</controls:Card>
 	
-</Window>
+</UserControl>

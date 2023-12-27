@@ -11,6 +11,9 @@ namespace Mac_project.ViewModels;
 public partial class MainWindowViewModel : ViewModelBase
 {
     [ObservableProperty]
+    private bool _isLoggedIn = false;
+
+    [ObservableProperty]
     private bool _isPaneOpen = true;
 
     [ObservableProperty]

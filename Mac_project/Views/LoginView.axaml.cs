@@ -3,11 +3,12 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Mac_project.ViewModels;
 using System;
 
 namespace Mac_project.Views;
 
-public partial class LoginView : Window
+public partial class LoginView : UserControl
 {
     public event EventHandler AuthenticationSuccess;
     public LoginView()
@@ -49,9 +50,9 @@ public partial class LoginView : Window
         {
             // Raise the AuthenticationSuccess event
             AuthenticationSuccess?.Invoke(this, EventArgs.Empty);
+            MainWindowViewModel mainWindowViewModel = (MainWindowViewModel)this.DataContext;
 
-            // Close the login window
-            Close();
+            mainWindowViewModel.IsLoggedIn = true;
         }
         else
         {
@@ -59,15 +60,6 @@ public partial class LoginView : Window
         }
     }
     // Minimize and Close buttons
-    private void btnMinimize_Click(object sender, RoutedEventArgs e)
-    {
-        WindowState = WindowState.Minimized;
-    }
-
-    private void btnClose_Click(object sender, RoutedEventArgs e)
-    {
-        this.Close();
-    }
     public class AuthenticationService
     {
         public bool IsValidUser(string username, string password)
